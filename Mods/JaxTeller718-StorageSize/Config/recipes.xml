@@ -1,0 +1,56 @@
+<JaxTeller718>
+	<remove xpath="/recipes/recipe[@name='cntGunSafe']"/>
+	<remove xpath="/recipes/recipe[@name='cntDeskSafe']"/>
+	<remove xpath="/recipes/recipe[@name='cntGreenDrawerSecure']"/>
+	<remove xpath="/recipes/recipe[@name='cntSecureStorageChest']"/>
+	<remove xpath="/recipes/recipe[@name='cntStorageGeneric']"/>
+	<append xpath="/recipes">
+		<recipe name="cntSecureStorageChestJT" count="1" craft_area="tableSawJT">
+			<ingredient name="resourceWood" count="8"/>
+			<ingredient name="resourceNail" count="8"/>
+			<ingredient name="resourceBrassHingeJT" count="2"/>
+		</recipe>
+		<recipe name="cntHardenedChestSecureJT" count="1" craft_time="25" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="100"/>
+			<ingredient name="resourceForgedSteel" count="10"/>
+			<ingredient name="resourceSpring" count="15"/>
+			<ingredient name="resourceMechanicalParts" count="25"/>
+			<ingredient name="resourceBrassHingeJT" count="2"/>
+		</recipe>
+		<recipe name="cntDeskSafeJT" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedIron" count="20"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="resourceMechanicalParts" count="3"/>
+			<ingredient name="resourceBrassHingeJT" count="2"/>
+		</recipe>
+		<recipe name="cntGunSafeJT" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="40"/>
+			<ingredient name="resourceSpring" count="5"/>
+			<ingredient name="resourceMechanicalParts" count="5"/>
+			<ingredient name="resourceBrassHingeJT" count="2"/>
+		</recipe>
+		<recipe name="cntGreenDrawerSecureJT" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="8"/>
+			<ingredient name="resourceBrassHingeJT" count="2"/>
+		</recipe>
+		<recipe name="cntCardboardStorageJT" count="1">
+			<ingredient name="resourceDuctTape" count="2"/>
+			<ingredient name="resourcePaper" count="25"/>
+		</recipe>
+		<recipe name="armoredChestJT" count="1" craft_area="workbench" craft_time="5" tags="workbenchCrafting">
+			<ingredient name="resourceForgedSteel" count="25"/>
+			<ingredient name="resourceSpring" count="4"/>
+			<ingredient name="resourceBrassHingeJT" count="2"/>
+		</recipe>
+		<recipe name="cntStorageGeneric" count="1" craft_area="tableSawJT">
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceBrassHingeJT" count="2"/>
+		</recipe>
+		<recipe name="cntStorageGenericSignedJT" count="1" craft_area="tableSawJT">
+			<ingredient name="resourceWood" count="20"/>
+			<ingredient name="resourceNail" count="15"/>
+			<ingredient name="resourceBrassHingeJT" count="2"/>
+		</recipe>
+	</append>
+</JaxTeller718>

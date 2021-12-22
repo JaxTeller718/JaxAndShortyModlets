@@ -1,0 +1,28 @@
+<config>
+
+	
+	
+	<append xpath="/lootcontainers">
+		
+<lootcontainer id="714" name="cardboardStorage" count="0" size="6,5" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="qualBaseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>
+
+<lootcontainer id="715" name="smallStorageChest" count="0" size="7,6" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>
+
+<lootcontainer id="716" name="mediumStorageBox" count="0" size="8,6" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>
+
+<lootcontainer id="717" name="largeArmoredStorage" count="0" size="9,8" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualBaseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>
+
+<lootcontainer id="718" name="megaArmoredStorage" count="0" size="11,11" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualBaseTemplate">
+	<item name="cobweb" count="1,2"/>
+</lootcontainer>
+
+	</append>
+</config>

@@ -1,0 +1,11 @@
+<JaxTeller718>
+
+	<set xpath="/recipes/recipe[@name='meleeToolPickT0StonePickaxeJT']/ingredient[@name='resourceYuccaFibers']/@name">resourceFiberCordageJT</set>
+	<set xpath="/recipes/recipe[@name='meleeToolPickT0StonePickaxeJT']/ingredient[@name='resourceRockSmall']/@name">resourceSharpenedStoneJT</set>
+	<set xpath="/recipes/recipe[@name='meleeToolPickT0StonePickaxeJT']/ingredient[@name='resourceWood']/@name">resourceStickJT</set>
+
+	<set xpath="/recipes/recipe[@name='meleeToolPickT0StonePickaxeJT']/ingredient[@name='resourceFiberCordageJT']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='meleeToolPickT0StonePickaxeJT']/ingredient[@name='resourceSharpenedStoneJT']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='meleeToolPickT0StonePickaxeJT']/ingredient[@name='resourceStickJT']/@count">8</set>
+
+</JaxTeller718>

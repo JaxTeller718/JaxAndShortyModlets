@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configs>
+	<!-- DOUGH: Used new Loot Groups for tiering. Used Progression.xml for hints on item goodness -->
+	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT0']">
+		<item name="drinkBerryTeaSchematic"/>
+		<item name="drinkIcedMixedTeaSchematic"/>
+		<item name="drinkIcedCoffeeSchematic"/>
+		<item name="foodYuccaChipsSchematic"/>
+		<item name="foodHashbrownSchematic"/>
+		<item name="foodFriedMeatSchematic"/>
+		<item name="foodCornChipsSchematic"/>
+		<item name="foodFriedMushroomsSchematic"/>
+		<item name="foodFriedEggSchematic"/>
+		<item name="foodFrenchToastSchematic"/>
+		<item name="foodCustardPieSchematic"/>
+		<item name="foodBiscuitSchematic"/>
+		<item name="foodBiscuitWithJamSchematic"/>
+		<item name="foodRamenSoupSchematic"/>
+		<item name="foodSoupMushroomSchematic"/>
+		<item name="foodTunaSandwichJTSchematic"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT1']">
+		<item name="foodCornGritsSchematic"/>
+		<item name="foodBlueberryJamSchematic"/>
+		<item name="foodYuccaJamSchematic"/>
+		<item name="foodEggSaladSchematic"/>
+		<item name="foodBaconEggSandwichSchematic"/>
+		<item name="foodFishPieSchematic"/>
+		<item name="foodGrillSteakSchematic"/>
+		<item name="foodEggBaconSandwichSchematic"/>	
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT2']">
+		<item name="foodMashedPotatoSchematic"/>
+		<item name="foodCoffeeCakeSchematic"/>
+		<item name="foodMushroomPieSchematic"/>
+		<item name="foodMeatAndBeerPieSchematic"/>
+		<item name="foodHamburgerSchematic"/>
+		<item name="foodHoneyHamSchematic"/>
+		<item name="foodGrillSteakSandwichSchematic"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupFoodCommon']">
+		<item name="foodRamenNoodles"/>
+		<item name="foodButterJT" count="1,2"/>
+		<item name="foodMayonnaise" count="1,2"/>
+		<item name="foodBagOfHotChips"/>
+		<item name="foodBagOfChips"/>
+		<item name="foodCandyBar"/>
+		<item name="foodSnoBalls"/>
+		<item name="foodTwinkies"/>
+		<item name="foodCheezIts"/>
+		<item name="foodGoldfish"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupDrinksUncommon']">
+		<item name="drinkMilk"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupIngredientsUncommon']">
+		<item name="drinkMilk"/>
+		<item name="foodButterJT"/>
+		<item name="foodMayonnaise"/>
+	</append>
+
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupFoodTrash']">
+		<item name="drinkMilk" count="2,4" loot_prob_template="med"/>
+		<item name="foodRamenNoodles" loot_prob_template="low"/>
+		<item name="foodButterJT" count="2,4" loot_prob_template="low"/>
+		<item name="foodMayonnaise" count="2,4" loot_prob_template="medLow"/>
+		<item name="foodBagOfHotChips" loot_prob_template="low"/>
+		<item name="foodBagOfChips" loot_prob_template="low"/>
+		<item name="foodCandyBar" loot_prob_template="low"/>
+		<item name="foodSnoBalls" loot_prob_template="low"/>
+		<item name="foodTwinkies" loot_prob_template="low"/>
+		<item name="foodCheezIts" loot_prob_template="low"/>
+		<item name="foodGoldfish" loot_prob_template="low"/>
+	</append>
+	
+	<append xpath="/lootcontainers/lootgroup[@name='groupFoodTrash']">
+	<item name="foodSaltJT" loot_prob_template="low"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupFoodUncommon']">
+	<item name="foodSaltJT" count="2,4" prob="0.5"/>
+	</append>
+	
+
+	<append xpath="/lootcontainers/lootgroup[@name='groupDrinksCommon']">
+		<item name="drinkCanSodaJT" loot_prob_template="low"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupSodaFountain01']">
+		<item name="drinkFrozenIceeJT" count="1,2" loot_prob_template="medLow"/>
+		<item name="drinkJarBeer" count="1,2" loot_prob_template="medLow"/>
+		<item name="drinkJarCoffee" count="1,2" loot_prob_template="medLow"/>
+	</append>
+</configs>

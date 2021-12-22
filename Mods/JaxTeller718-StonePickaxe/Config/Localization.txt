@@ -1,0 +1,6 @@
+﻿Key,Source,Context,English
+meleeToolPickT0StonePickaxeJT,items,Tool,Stone Pickaxe,,,,,
+meleeToolPickT0StonePickaxeJTDesc,items,Tool,"The best way to gather stone and ore from rocks and boulders early on. \nRepair with Small Stone.",,,,,
+quest_BasicSurvival2b_subtitle,Quest,Quest Info,Craft A Stone Pickaxe,,,,,
+quest_BasicSurvival2b_description,Quest,Quest Info,You will need a stone pickaxe to gather ores and break down some metal doors. Make a stone pickaxe.,,,,,
+quest_BasicSurvival2b,Quest,Quest Info,Basic Survival 2/8,,,,,

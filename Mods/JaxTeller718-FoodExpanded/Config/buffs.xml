@@ -1,0 +1,163 @@
+<configs>
+
+	<remove xpath="/buffs/buff[@name='buffYuccaJuiceSmoothie']"/>
+	<!-- After respawn set hunger and thirst to  value below -->
+	<insertAfter xpath="/buffs/buff[@name='buffBlackStrapCoffee']">
+		<buff name="buffYuccaJuiceSmoothie" name_key="drinkYuccaJuiceSmoothie" description_key="drinkYuccaJuiceSmoothieDesc" icon="ui_game_symbol_coffee">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value value=".buffYuccaJuiceSmoothieDisplay"/>
+			<display_value_format value="time"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$buffYuccaJuiceSmoothieDuration" operation="subtract" value="@$MetabolismDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffYuccaJuiceSmoothieDisplay" operation="set" value="@$buffYuccaJuiceSmoothieDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".buffYuccaJuiceSmoothieDisplay" operation="divide" value="@$MetabolismDuration"/>
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="buffYuccaJuiceSmoothie">
+					<requirement name="CVarCompare" cvar="$buffYuccaJuiceSmoothieDuration" operation="LTE" value="0"/>
+				</triggered_effect>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".buffYuccaJuiceSmoothieDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar="$buffYuccaJuiceSmoothieDuration" operation="set" value="0"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="30"/>
+			</effect_group>
+		</buff>
+	</insertAfter>
+	
+	
+	<append xpath="/buffs">
+
+		<buff name="ATbuffVodka" name_key="buffDrunk01Name" description_key="ATVodkaDrunkDesc" tooltip_key="buffDrunk01Tooltip" icon="ui_game_symbol_beer">
+			<damage_type value="disease"/>
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value value=".ATbuffVodkaDisplay"/>
+			<display_value_format value="time"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ATbuffVodkaDuration" operation="subtract" value="@$MetabolismDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ATbuffVodkaDisplay" operation="set" value="@$ATbuffVodkaDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ATbuffVodkaDisplay" operation="divide" value="@$MetabolismDuration"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$ATbuffVodkaDuration" operation="LTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ATbuffVodkaDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ATbuffVodkaDuration" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="ATbuffVodka"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="BarteringBuying" operation="base_add" value=".15"/>
+				<passive_effect name="BarteringSelling" operation="base_add" value=".15"/>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.5">
+					<requirement name="NotHasBuff" buff="buffHealWaterMax"/>
+				</passive_effect>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyScreenEffect" intensity="0.4" effect_name="Drunk"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyScreenEffect" intensity="0" effect_name="Drunk"/>
+				<passive_effect name="BuffResistance" operation="base_add" value="1" tags="buffInjuryStunned01"/>
+			</effect_group>
+		</buff>
+		<buff name="ATbuffEnergyTablet" name_key="ATEnergyTabletName" description_key="ATEnergyTabletDesc" tooltip_key="ATEnergyTabletTooltip" icon="ui_game_symbol_pills">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value value=".ATbuffEnergyTabletDisplay"/>
+			<display_value_format value="time"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ATbuffEnergyTabletDuration" operation="subtract" value="@$MetabolismDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ATbuffEnergyTabletDisplay" operation="set" value="@$ATbuffEnergyTabletDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ATbuffEnergyTabletDisplay" operation="divide" value="@$MetabolismDuration"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$ATbuffEnergyTabletDuration" operation="LTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ATbuffEnergyTabletDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ATbuffEnergyTabletDuration" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="ATbuffEnergyTablet"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="StaminaChangeOT" operation="perc_add" value="0.25"/>
+				<passive_effect name="ReloadSpeedMultiplier" operation="perc_add" value="0.15"/>
+				<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.3"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".5"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="1.2"/>
+				<!-- regening stamina costs you water -->
+				<!-- DOUGH: This appears to no longer ba a valid effect -->
+				<!-- <passive_effect name="StaminaLossMaxMult" operation="perc_add" value="1.75"/> -->
+				<!-- regening stamina costs food, blacks out the stamina bar -->
+			</effect_group>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="RemoveBuff" buff="ATbuffEnergyTabletSideEffect"/>
+				<triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="ATbuffEnergyTabletSideEffect">
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="15"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+		<buff name="ATbuffEnergyTabletSideEffect" name_key="buffDrugSteroidsSideEffectName" description_key="buffDrugSteroidsSideEffectDesc" tooltip_key="buffDrugSteroidsSideEffectTooltip" icon="ui_game_symbol_pills" icon_color="255,128,0">
+			<damage_type value="disease"/>
+			<stack_type value="ignore"/>
+			<duration value="600"/>
+			<effect_group>
+				<passive_effect name="AttributeLevel" tags="attAgility" operation="base_subtract" value="2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffPerkAbilityUpdate"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="AddBuff" buff="buffPerkAbilityUpdate"/>
+			</effect_group>
+		</buff>
+		<buff name="ATbuffSugarRush" name_key="ATSugarRushName" description_key="ATSugarRushDesc" tooltip_key="ATSugarRushTooltip" icon="ATCandyIcon">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value value=".ATbuffSugarRushDisplay"/>
+			<display_value_format value="time"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="subtract" value="@$MetabolismDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ATbuffSugarRushDisplay" operation="set" value="@$ATbuffSugarRushDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ATbuffSugarRushDisplay" operation="divide" value="@$MetabolismDuration"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$ATbuffSugarRushDuration" operation="LTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ATbuffSugarRushDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ATbuffSugarRushDuration" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="ATbuffSugarRush"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="WaterChangeOT" operation="base_subtract" value="0.05"/>
+				<passive_effect name="RunSpeed" operation="perc_add" value=".15"/>
+				<passive_effect name="WaterLossPerStaminaPointGained" operation="perc_add" value="1.05"/>
+				<!-- regening stamina costs you water -->
+				<!-- DOUGH: This appears to no longer ba a valid effect -->
+				<!-- <passive_effect name="StaminaLossMaxMult" operation="perc_add" value="0.1"/> -->
+				<!-- regening stamina costs food, blacks out the stamina bar -->
+			</effect_group>
+		</buff>
+		<buff name="ATbuffColdDrink" name_key="ATColdDrinkName" description_key="ATColdDrinkDesc" icon="ATIceDrink">
+			<stack_type value="replace"/>
+			<duration value="0"/>
+			<display_value value=".ATbuffColdDrinkDisplay"/>
+			<display_value_format value="time"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ATbuffColdDrinkDuration" operation="subtract" value="@$MetabolismDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ATbuffColdDrinkDisplay" operation="set" value="@$ATbuffColdDrinkDuration"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar=".ATbuffColdDrinkDisplay" operation="divide" value="@$MetabolismDuration"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="$ATbuffColdDrinkDuration" operation="LTE" value="0"/>
+				<triggered_effect trigger="onSelfBuffRemove" action="ModifyCVar" cvar=".ATbuffColdDrinkDisplay" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$ATbuffColdDrinkDuration" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="RemoveBuff" buff="ATbuffColdDrink"/>
+			</effect_group>
+			<effect_group>
+				<passive_effect name="HyperthermalResist" operation="base_add" value="30"/>
+			</effect_group>
+		</buff>
+		<buff name="peculiarTaste" name_key="peculiarTasteNAME" description_key="You're not sure what you just ate but it didn't taste like chicken." tooltip_key="A peculiar taste..." icon="ui_game_symbol_dysentery">
+			<damage_type value="disease"/>
+			<stack_type value="ignore"/>
+			<duration value="30"/>
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$dysenteryCounter" operation="add" value="1080"/>
+				<triggered_effect trigger="onSelfBuffStart" action="ModifyCVar" cvar="$dysenteryNextPoopAttack" operation="set" value="0"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="buffDysenteryMain">
+					<requirement name="NotHasBuff" buff="buffDysenteryMain"/>
+				</triggered_effect>
+			</effect_group>
+		</buff>
+	</append>
+</configs>

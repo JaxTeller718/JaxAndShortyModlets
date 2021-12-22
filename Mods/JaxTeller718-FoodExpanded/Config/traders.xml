@@ -1,0 +1,13 @@
+<configs>
+	<append xpath="/traders/trader_item_groups/trader_item_group[@name='preparedFood']">
+		<item name="foodGrillSteakSandwich"/>
+		<item name="foodBaconEggSandwich"/>
+		<item name="foodHamburger"/>
+		<item name="foodBiscuit" count="1,3"/>
+		<item name="foodTunaSandwichJT"/>
+		<item name="foodRamenNoodles" count="1,2"/>
+		<item name="foodCandyBar" count="1,2"/>
+		<item name="foodBagOfChips" count="1,2"/>
+		<item name="foodBagOfHotChips" count="1,2"/>
+	</append>
+</configs>

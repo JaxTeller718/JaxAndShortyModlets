@@ -1,0 +1,26 @@
+<JaxTeller718>
+
+	<append xpath="/items" >
+
+	<item name="resourceAnimalHideJT">
+		<property name="HoldType" value="45"/>
+		<property name="CustomIcon" value="resourceAnimalHideJT"/>
+		<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+		<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+		<property name="Material" value="MresourceLeather"/>
+		<property name="Weight" value="10"/>
+		<property name="RepairAmount" value="150"/>
+		<property name="Stacknumber" value="250"/>
+		<property name="FuelValue" value="5"/>
+		<property name="EconomicValue" value="22"/>
+		<property name="Group" value="Resources"/>
+		<property name="CraftingIngredientTime" value="2"/>
+	</item>
+
+	</append>
+
+	<append xpath="/items/item[@name='resourceLeather']">
+		<property name="CustomIcon" value="resourceLeatherJT"/>
+	</append>
+	
+</JaxTeller718>

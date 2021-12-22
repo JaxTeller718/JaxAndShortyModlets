@@ -1,0 +1,9 @@
+<JaxTeller718>
+
+	<append xpath="/recipes">
+		<recipe name="resourceLeather" count="5" craft_time="15">
+			<ingredient name="resourceAnimalHideJT" count="1"/>
+		</recipe>
+	</append>	
+
+</JaxTeller718>

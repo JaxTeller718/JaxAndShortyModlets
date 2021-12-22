@@ -1,0 +1,19 @@
+﻿Key,Source,Context,English
+resourceStickJT,items,Item,Sticks,,,,,
+resourceStickJTDesc,items,Item,"Crafted from wood, sticks are useful in many survival situations.",,,,,
+resourceFiberCordageJT,items,Item,Fiber Cordage,,,,,
+resourceFiberCordageJTDesc,items,Item,"Crafted from wood, sticks are useful in many survival situations.",,,,,
+resourceWoodNailJT,items,Item,Wood Nail,,,,,
+resourceWoodNailJTDesc,items,Item,A primitively made nail crafted from wood for basic items.,,,,,
+resourceArrowHeadStoneJT,items,Tool,Stone Arrowhead,,,,,
+resourceArrowHeadStoneJTDesc,items,Tool,"Crafted from stone, used to make arrows and bolts.",,,,,
+resourceArrowShaftJT,items,Tool,Arrow Shaft,,,,,
+resourceArrowShaftJTDesc,items,Tool,"Crafted from wood, arrow shafts are necessary to make arrows.",,,,,
+resourceSharpenedStoneJT,items,Item,Sharp Stone,,,,,
+resourceSharpenedStoneJTDesc,items,Item,"Sharpening the stones you find helps you make deadly tools and weapons.",,,,,
+quest_BasicSurvival6a_subtitle,Make Your Home
+quest_BasicSurvival6a_description,You may want to construct wooden frames to plug holes ina house or create your own. Craft wood nails from wood and make some frames and place them. Then upgrade them.
+quest_BasicSurvival6a,Basic Survival 7/8
+quest_BasicSurvival2a,Basic Survival 2/8
+resourceTwineJT,items,Item,Twine,,,,,
+resourceTwineJTDesc,items,Item,"Use to craft clothing, armor, and weapons.",,,,,

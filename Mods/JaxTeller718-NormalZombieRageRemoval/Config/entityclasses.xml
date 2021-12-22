@@ -1,0 +1,6 @@
+﻿<JaxTeller718>
+
+
+	<set xpath="/entity_classes/entity_class[@name='zombieSkateboarder']/property[@name='MoveSpeedAggro']/@value">0.2, 1.25</set>
+
+</JaxTeller718>

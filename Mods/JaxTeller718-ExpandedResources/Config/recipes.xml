@@ -1,0 +1,133 @@
+<JaxTeller718>
+
+	<append xpath="/recipes/recipe[ starts-with(@name, 'armorCloth') or (contains(@name, 'armorIron')) or (contains(@name, 'armorLeather')) or (contains(@name, 'armorScrap'))	 ]">
+		<ingredient name="resourceTwineJT" count="3"/>
+	</append>
+	
+	<remove xpath="/recipes/recipe[@name='campfire']"/>
+
+  
+	<append xpath="/recipes">
+		<recipe name="resourceArrowHeadStoneJT" count="2" craft_time="1">
+			<ingredient name="resourceRockSmall" count="1"/>
+		</recipe>
+
+		<recipe name="resourceArrowShaftJT" count="2" craft_time="0.5">
+			<ingredient name="resourceStickJT" count="2"/>
+			<ingredient name="resourceFeather" count="2"/>
+		</recipe>
+		
+		<recipe name="resourceSharpenedStoneJT" count="1" craft_time="1">
+			<ingredient name="resourceRockSmall" count="1"/>
+		</recipe>
+
+		<recipe name="resourceWoodNailJT" count="2" craft_time="1">
+			<ingredient name="resourceWood" count="1"/>
+		</recipe>
+
+		<recipe name="resourceFiberCordageJT" count="1" craft_time="1">
+			<ingredient name="resourceYuccaFibers" count="3"/>
+		</recipe>
+		
+		<recipe name="resourceStickJT" count="2" craft_time="1">
+			<ingredient name="resourceWood" count="1"/>
+		</recipe>
+
+		<recipe name="campfire" count="1" craft_time="8">
+			<ingredient name="resourceRockSmall" count="8"/>
+			<ingredient name="resourceStickJT" count="12"/>
+			<ingredient name="resourceYuccaFibers" count="5"/>
+		</recipe>
+		
+	</append>
+
+	<set xpath="/recipes/recipe[@name='ammoArrowIron']/ingredient[@name='resourceWood']/@name">resourceArrowShaftJT</set>
+	<set xpath="/recipes/recipe[@name='ammoArrowStone']/ingredient[@name='resourceWood']/@name">resourceArrowShaftJT</set>
+	<set xpath="/recipes/recipe[@name='ammoCrossbowBoltIron']/ingredient[@name='resourceWood']/@name">resourceArrowShaftJT</set>
+	<set xpath="/recipes/recipe[@name='ammoCrossbowBoltStone']/ingredient[@name='resourceWood']/@name">resourceArrowShaftJT</set>
+
+
+	<set xpath="/recipes/recipe[@name='ammoArrowStone']/ingredient[@name='resourceRockSmall']/@name">resourceArrowHeadStoneJT</set>
+	<set xpath="/recipes/recipe[@name='ammoCrossbowBoltStone']/ingredient[@name='resourceRockSmall']/@name">resourceArrowHeadStoneJT</set>
+
+	<remove xpath="/recipes/recipe[@name='ammoArrowIron']/ingredient[@name='resourceFeather']"/>
+	<remove xpath="/recipes/recipe[@name='ammoArrowStone']/ingredient[@name='resourceFeather']"/>
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltIron']/ingredient[@name='resourceFeather']"/>
+	<remove xpath="/recipes/recipe[@name='ammoCrossbowBoltStone']/ingredient[@name='resourceFeather']"/>
+
+
+	<set xpath="/recipes/recipe[@name='gunBowT0PrimitiveBow']/ingredient[@name='resourceYuccaFibers']/@name">resourceFiberCordageJT</set>
+	<set xpath="/recipes/recipe[@name='meleeWpnSpearT0StoneSpear']/ingredient[@name='resourceYuccaFibers']/@name">resourceFiberCordageJT</set>
+	<set xpath="/recipes/recipe[@name='meleeToolShovelT0StoneShovel']/ingredient[@name='resourceYuccaFibers']/@name">resourceFiberCordageJT</set>
+	<set xpath="/recipes/recipe[@name='meleeWpnSledgeT0StoneSledgehammer']/ingredient[@name='resourceYuccaFibers']/@name">resourceFiberCordageJT</set>
+	<set xpath="/recipes/recipe[@name='meleeToolRepairT0StoneAxe']/ingredient[@name='resourceYuccaFibers']/@name">resourceFiberCordageJT</set>
+	<set xpath="/recipes/recipe[@name='meleeToolRepairT0StoneAxe']/ingredient[@name='resourceRockSmall']/@name">resourceSharpenedStoneJT</set>
+	<set xpath="/recipes/recipe[@name='meleeToolRepairT0StoneAxe']/ingredient[@name='resourceWood']/@name">resourceStickJT</set>
+
+	<set xpath="/recipes/recipe[@name='bedrollBlockVariantHelper']/ingredient[@name='resourceYuccaFibers']/@count">24</set>
+	<set xpath="/recipes/recipe[@name='meleeToolShovelT0StoneShovel']/ingredient[@name='resourceFiberCordageJT']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='meleeToolRepairT0StoneAxe']/ingredient[@name='resourceFiberCordageJT']/@count">3</set>
+	<set xpath="/recipes/recipe[@name='meleeToolRepairT0StoneAxe']/ingredient[@name='resourceSharpenedStoneJT']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='meleeToolRepairT0StoneAxe']/ingredient[@name='resourceStickJT']/@count">8</set>
+
+
+	<setattribute xpath="/recipes/recipe[@name='bedrollBlockVariantHelper']" name="craft_time">6</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='apparelPlantFiberGloves']" name="craft_time">4</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='apparelPlantFiberHat']" name="craft_time">4</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='apparelPlantFiberHood']" name="craft_time">4</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='apparelPlantFiberPants']" name="craft_time">4</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='apparelPlantFiberShirt']" name="craft_time">4</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='apparelPlantFiberShoes']" name="craft_time">4</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='frameShapes:VariantHelper']" name="craft_time">2</setattribute>
+	
+	
+	<insertAfter xpath="/recipes/recipe[@name='bedrollBlockVariantHelper']/ingredient[@name='resourceYuccaFibers']">
+		<ingredient name="resourceFiberCordageJT" count="3"/>
+		<ingredient name="resourceStickJT" count="10"/>
+	</insertAfter>
+
+	<insertAfter xpath="/recipes/recipe[@name='apparelPlantFiberGloves']/ingredient[@name='resourceYuccaFibers']">
+		<ingredient name="resourceFiberCordageJT" count="2"/>
+	</insertAfter>
+
+	<insertAfter xpath="/recipes/recipe[@name='apparelPlantFiberHat']/ingredient[@name='resourceYuccaFibers']">
+		<ingredient name="resourceFiberCordageJT" count="2"/>
+	</insertAfter>
+
+	<insertAfter xpath="/recipes/recipe[@name='apparelPlantFiberHood']/ingredient[@name='resourceYuccaFibers']">
+		<ingredient name="resourceFiberCordageJT" count="2"/>
+	</insertAfter>
+
+	<insertAfter xpath="/recipes/recipe[@name='apparelPlantFiberPants']/ingredient[@name='resourceYuccaFibers']">
+		<ingredient name="resourceFiberCordageJT" count="2"/>
+	</insertAfter>
+
+	<insertAfter xpath="/recipes/recipe[@name='apparelPlantFiberShirt']/ingredient[@name='resourceYuccaFibers']">
+		<ingredient name="resourceFiberCordageJT" count="2"/>
+	</insertAfter>
+
+	<insertAfter xpath="/recipes/recipe[@name='apparelPlantFiberShoes']/ingredient[@name='resourceYuccaFibers']">
+		<ingredient name="resourceFiberCordageJT" count="2"/>
+	</insertAfter>
+
+	<insertAfter xpath="/recipes/recipe[@name='frameShapes:VariantHelper']/ingredient[@name='resourceWood']">
+		<ingredient name="resourceWoodNailJT" count="2"/>
+	</insertAfter>
+	<insertAfter xpath="/recipes/recipe[@name='woodShapes:VariantHelper']/ingredient[@name='resourceWood']">
+		<ingredient name="resourceWoodNailJT" count="2"/>
+	</insertAfter>
+
+	<set xpath="/recipes/recipe[@name='frameShapes:VariantHelper']/ingredient[@name='resourceWood']/@count">10</set>
+
+	
+	<append xpath="/recipes/recipe[
+starts-with(@name, 'woodFrame')
+		
+or (contains(@name, 'secureDoorWooden'))
+		
+]">
+		<ingredient name="resourceWoodNailJT" count="4"/>
+	</append>
+
+
+</JaxTeller718>

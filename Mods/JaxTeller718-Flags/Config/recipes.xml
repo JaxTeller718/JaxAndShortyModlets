@@ -1,0 +1,12 @@
+<JaxTeller718>
+	<append xpath="/recipes">
+
+		<recipe name="flagPirate1JT" count="1" craft_time="5">
+			<ingredient name="resourceWood" count="15"/>
+			<ingredient name="resourceFiberCordageJT" count="3"/>
+			<ingredient name="resourcePaper" count="5"/>
+			<ingredient name="resourcePaint" count="1"/>
+		</recipe>
+	</append>
+	
+</JaxTeller718>

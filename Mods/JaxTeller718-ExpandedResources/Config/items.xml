@@ -1,0 +1,120 @@
+<JaxTeller718>
+
+	<append xpath="/items" >
+	
+		<item name="resourceTwineJT">
+			<!-- scrap material -->
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="#Other/Items?Crafting/plant_fibers.fbx"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Weight" value="1"/>
+			<property name="Material" value="MresourceYuccaFibers"/>
+			<property name="RepairTime" value="1"/>
+			<property name="RepairAmount" value="30"/>
+			<property name="Stacknumber" value="6000"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="1"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Resources"/>
+		</item>
+		
+		<item name="resourceArrowHeadStoneJT">
+			<!-- scrap material -->
+			<property name="HoldType" value="40"/>
+			<property name="Meshfile" value="#Other/Items?Crafting/rock_smallPrefab.prefab"/>
+			<property name="DropScale" value="6"/>
+			<property name="Material" value="MresourceRockSmall"/>
+			<property name="Stacknumber" value="6000"/>
+			<!-- STK resource -->
+			<property name="Weight" value="5"/>
+			<property name="MeltTimePerUnit" value=".5"/>
+			<property name="EconomicValue" value="50"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Basics,Resources"/>
+			<property name="CraftingIngredientTime" value=".5"/>
+		</item>
+
+		<item name="resourceArrowShaftJT">
+			<!-- scrap material -->
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceStick"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="3000"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="5"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Basics,Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+
+<item name="resourceSharpenedStoneJT">
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="MresourceRockSmall"/>
+	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="12"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property name="Group" value="Basics,Resources"/>
+</item>
+
+		<item name="resourceStickJT">
+			<!-- scrap material -->
+			<property name="HoldType" value="45"/>
+			<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceStick"/>
+			<property name="Weight" value="1"/>
+			<property name="Stacknumber" value="3000"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="5"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="Group" value="Basics,Resources"/>
+			<property name="RepairAmount" value="100"/>
+			<property name="LootExpValue" value="1"/>
+			<property name="CraftingIngredientTime" value=".25"/>
+		</item>
+
+		<item name="resourceFiberCordageJT">
+			<!-- scrap material -->
+			<property name="HoldType" value="16"/>
+			<property name="Meshfile" value="#Other/Items?Crafting/plant_fibers.fbx"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Weight" value="1"/>
+			<property name="Material" value="MresourceYuccaFibers"/>
+			<property name="RepairTime" value="1"/>
+			<property name="RepairAmount" value="30"/>
+			<property name="Stacknumber" value="500"/>
+			<!-- STK resource -->
+			<property name="FuelValue" value="1"/>
+			<property name="EconomicValue" value="5"/>
+			<property name="EconomicBundleSize" value="50"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Basics,Resources"/>
+		</item>
+
+		<item name="resourceWoodNailJT">
+			<property name="Meshfile" value="#Other/Items?Tools/nailProjectilePrefab.prefab"/>
+			<property name="HoldType" value="45"/>
+			<property name="HandMeshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+			<property name="Material" value="MresourceWood"/>
+			<property name="Stacknumber" value="1000"/>
+			<!-- STK resource -->
+			<property name="EconomicValue" value="10"/>
+			<property name="EconomicBundleSize" value="10"/>
+			<property name="Group" value="Resources,Basics"/>
+		</item>
+
+	</append>
+	
+
+</JaxTeller718>

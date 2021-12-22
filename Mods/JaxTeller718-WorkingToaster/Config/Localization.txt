@@ -1,0 +1,10 @@
+﻿Key,Source,Context,English
+cntToasterJT,blocks,Block,Toaster (Powered)
+cntToasterJTDesc,blocks,Block,"Nothing starts your day of zombie slaying off better than some nice crunchy toast."
+
+foodToastedBread,items,Food,Toasted Bread
+foodToastedBreadDesc,items,Food,"Pop 2 slices of bread and set your toasters to medum."
+foodYuccaJamAndToast,items,Food,Yucca Jam And Toast
+foodYuccaJamAndToastDesc,items,Food,"Jam on toast is as basic as it can get but hell if you do not still love it."
+foodBlueberryJamAndToast,items,Food,Blueberry Jam And Toast
+foodBlueberryJamAndToastDesc,items,Food,"Jam on toast is as basic as it can get but hell if you do not still love it."

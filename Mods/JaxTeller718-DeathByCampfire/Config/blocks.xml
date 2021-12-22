@@ -1,0 +1,5 @@
+<configs>
+
+	<set xpath="/blocks/block[@name='campfire']/property[@name='BuffsWhenWalkedOn']/@value">buffBurningFlamingArrow</set> 
+
+</configs>

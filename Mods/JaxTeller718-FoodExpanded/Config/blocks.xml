@@ -1,0 +1,9 @@
+<JaxTeller718>
+	<set xpath="/blocks/block[@name='stalactite01']/drop[@event='Harvest' and @name='resourcePotassiumNitratePowder']/@count">11</set>
+	<set xpath="/blocks/block[@name='stalactite01']/drop[@event='Harvest' and @name='resourcePotassiumNitratePowder']/@name">resourceSaltJT</set>
+	<set xpath="/blocks/block[@name='stalactite01']/drop[@event='Fall' and @name='resourcePotassiumNitratePowder']/@count">11</set>
+	<set xpath="/blocks/block[@name='stalactite01']/drop[@event='Fall' and @name='resourcePotassiumNitratePowder']/@name">resourceSaltJT</set>
+
+
+
+</JaxTeller718>

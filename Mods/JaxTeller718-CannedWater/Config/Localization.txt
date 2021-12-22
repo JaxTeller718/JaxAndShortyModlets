@@ -1,0 +1,7 @@
+﻿Key,Source,Context,English
+drinkCanRiverWater,items,Food,Can of Murky Water,,,,,
+drinkCanBoiledWater,items,Food,Boiled Water,,,,,
+drinkCanBoiledWaterDesc,items,Food,Boiled water is safe to drink. Probably.,,,,,
+drinkCanRiverWaterDesc,items,Food,Not so appealing but it will have to do.,,,,,
+drinkCanEmpty,items,Food,Empty Can,,,,,
+drinkCanEmptyDesc,items,Food,An empty can which you can scrap or fill with water.,,,,,

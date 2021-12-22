@@ -1,0 +1,34 @@
+<JaxTeller718>
+	<append xpath="/blocks">
+		<block name="flagMaster">
+			<property name="Material" value="Mmetal"/>
+			<property name="DisplayType" value="blockMulti"/>
+			<property name="MultiBlockDim" value="1,3,1"/>
+			<property name="IsTerrainDecoration" value="true"/>
+			<property name="Path" value="solid"/>
+			<property name="StabilitySupport" value="false"/>
+			<property name="OnlySimpleRotations" value="true"/>
+			<property name="CanPickup" value="true"/>
+			<property name="Collide" value="movement,bullet,arrow,rocket"/>
+			<drop event="Harvest" name="terrStone" count="0" tool_category="Disassemble"/>
+			<drop event="Harvest" name="resourceMetalPipe" count="4,8" tag="salvageHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="2,5" tag="allHarvest"/>
+			<drop event="Destroy" name="resourceScrapIron" count="2,5"/>
+			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+			<property name="DescriptionKey" value="flagGroupDesc"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Flags.unity3d?FlagLoot_JT"/>
+			<property name="CustomIcon" value="FlagSOA"/>
+			<property name="SellableToTrader" value="false"/>
+			<property name="Group" value="Resources"/>
+		</block>
+		<block name="flagPirate1JT">
+			<property name="Extends" value="flagMaster"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Flags.unity3d?FlagLoot_JT"/>
+			<property name="CustomIcon" value="flagPirate1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+
+	</append>
+</JaxTeller718>

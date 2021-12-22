@@ -1,0 +1,444 @@
+Key,Source,Context,Changes,English
+ATBerryTeaDesc,items,Food,New,A warm healing tea made from blueberries and snowberries
+
+ATMixedTeaDesc,items,Food,New,A cool refreshing mixed herbal tea that helps protect against the heat
+
+ATIcedCoffeeDesc,items,Food,New,A cool energising iced coffee that helps protect against the heat whilst remaining just as hydrating as the hot counterpart
+
+ATYuccaChipsDesc,items,Food,New,A handful of hearty wedge cut yucca chips
+
+ATHashbrownDesc,items,Food,New,A small triangle of shredded fried potato. A nice snack
+
+ATMashPotatoDesc,items,Food,New,This hefty pot of silky smooth mash potato could be a meal on it's own
+
+ATCornGritsDesc,items,Food,New,A warm pot of boiled corn grits with animal fat
+
+ATBlueberryJamDesc,items,Food,New,Sweet blueberry jam made from rendered fruits. Maybe too sweet on it's own
+
+ATYuccaJamDesc,items,Food,New,Surprisingly savory whilst still being sweet. Yucca jam is made from rendered down yucca fruit
+
+ATEggSaladDesc,items,Food,New,A basic egg salad made from boiled eggs. Boiled potato and oil dressing
+
+ATFriedMeatDesc,items,Food,New,Meat that has been fried in a cornmeal coating
+
+ATCornChipsDesc,items,Food,New,Crispy fried corn chips that make for a nice snack between bashing skulls in
+
+ATBBJamSandwichDesc,items,Food,New,A simple cornbread sandwich with a sweet blueberry jam filling to help recover from a long day
+
+ATYuccaJamSandwichDesc,items,Food,New,A simple cornbread sandwich with a savory yucca jam filling that helps get rid of even the strongest hunger pangs
+
+ATCoffeeCakeDesc,items,Food,New,This cake offers the energising properties of coffee whilst still being delicious
+
+ATMushroomPieDesc,items,Food,New,Savory and buttery pie crust filled to the brim with mushrooms
+
+ATMeatAndBeerPieDesc,items,Food,New,Rich and savory pie crust with a meat and beer filling. Truly a feast fit for the best of the best
+
+ATFriedMushroomsDesc,items,Food,New,Whole mushrooms coated in cornmeal and fried. A very filling snack
+
+ATFriedEggDesc,items,Food,New,A simple sunny side up fried egg. The main component of any good breakfast
+
+ATFrenchToastDesc,items,Food,New,Egg soaked cornbread that has been fried. Simple yet tasty
+
+ATHoneyGlazedMeatDesc,items,Food,New,Roasted meat with a deep honey glaze covering it
+
+ATBlueberrySodaDesc,items,Food,New,A refreshing carbonated soda made from blueberries
+
+ATCarbonatedWaterDesc,items,Food,New,Carbonated water that is both refreshing and useful for digestion
+
+ATKvassSodaDesc,items,Food,New,Kvass soda made from fermented cornbread to make it carbonated. A very basic soda
+
+ATVodkaDesc,items,Food,New,Fermented and distilled potato water that will improve your bartering. This stuff packs a punch
+
+
+ATBlueberrySpongeDesc,items,Food,New,Fluffy sponge cake with a very sweet blueberry jam filling. Filling for both the body and soul.
+
+ATYuccaSpongeDesc,items,Food,New,Sweet and fluffy sponge cake with a somewhat savory yucca jam filling. Extremely filling
+
+ATCustardPieDesc,items,Food,New,Buttery pie crust filled to the brim with a dense custard.
+
+ATEnergyTabletDesc,items,Food,New,Energy tablets are great for getting you out of sticky situations. However you can get addicted to them.
+
+ATFudgeDesc,items,Food,New,Sugary fudge that melts in the mouth and rots away the teeth. You didn't need those molars anyway
+
+ATPopcornDesc,items,Food,New,Popped corn - the movie-goers favourite. A basic snack between meals
+
+ATRockCandyDesc,items,Food,New,Unflavoured candy made mostly from sugar. Will give you quite the sugar rush
+
+ATRockCandyBlueberryDesc,items,Food,New,Blueberry flavoured rock candy that tastes good and will give you a sugar rush
+
+
+ATSpongeCakeDesc,items,Food,New,Dense sponge cake with sugar icing atop it.
+
+ATSugarExtractDesc,items,Food,New,You'd have to be pretty desperate to eat raw sugar. Used in soda, candies and cakes
+
+ATVodkaDrunkDesc,buffs,Buff,New,That stuff burns. You feel more talkative
+
+ATSugarRushDesc,buffs,Buff,New,A slight rush from the amount of sugar you just ate. This allows you to slightly run faster
+ATSugarRushName,buffs,Buff,New,Sugar Rush
+ATSugarRushTooltip,buffs,Buff,New,That was a lot of sugar.
+
+ATEnergyTabletDesc,buffs,Buff,New,You can run faster. reload slightly quicker and become less exhausted.
+ATEnergyTabletName,buffs,Buff,New,Energy Rush
+ATEnergyTabletTooltip,buffs,Buff,New,What a rush!
+
+ATColdDrinkName,buffs,Buff,New,Cold Drink
+ATColdDrinkDesc,buffs,Buff,New,Iced drinks help you survive better in hot environments.
+
+drinkBerryTea,items,Food,New,Berry Tea
+drinkBerryTeaDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+drinkBerryTeaSchematic,items,Food,New,Berry Tea Recipe
+
+drinkIcedMixedTea,items,Food,New,Iced Mixed tea
+drinkIcedMixedTeaDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+drinkIcedMixedTeaSchematic,items,Food,New,Iced Mixed tea Recipe
+
+drinkIcedCoffee,items,Food,New,Iced Coffee
+drinkIcedCoffeeDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+drinkIcedCoffeeSchematic,items,Food,New,Iced Coffee Recipe
+
+foodYuccaChips,items,Food,New,Yucca Chips
+foodYuccaChipsDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodYuccaChipsSchematic,items,Food,New,Yucca Chips Recipe
+
+foodHashbrown,items,Food,New,Hashbrown
+foodHashbrownDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodHashbrownSchematic,items,Food,New,Hashbrown Recipe
+
+foodMashedPotato,items,Food,New,Mashed Potato
+foodMashedPotatoDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodMashedPotatoSchematic,items,Food,New,Mashed Potato Recipe
+
+foodCornGrits,items,Food,New,Corn Grits
+foodCornGritsDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodCornGritsSchematic,items,Food,New,Corn Grits Recipe
+
+foodBlueberryJam,items,Food,New,Blueberry Jam
+foodBlueberryJamDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodBlueberryJamSchematic,items,Food,New,Blueberry Jam Recipe
+
+foodYuccaJam,items,Food,New,Yucca Jam
+foodYuccaJamDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodYuccaJamSchematic,items,Food,New,Yucca Jam Recipe
+
+foodEggSalad,items,Food,New,Egg Salad
+foodEggSaladDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodEggSaladSchematic,items,Food,New,Egg Salad Recipe
+
+foodFriedMeat,items,Food,New,Fried Meat
+foodFriedMeatDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodFriedMeatSchematic,items,Food,New,Fried Meat Recipe
+
+foodCornChips,items,Food,New,Corn Chips
+foodCornChipsDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodCornChipsSchematic,items,Food,New,Corn Chips Recipe
+
+foodBlueberryJamSandwich,items,Food,New,Blueberry Sandwich
+foodBlueberryJamSandwichDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodBlueberryJamSandwichSchematic,items,Food,New,Blueberry Sandwich Recipe
+
+foodYuccaJamSandwich,items,Food,New,Yucca Sandwich
+foodYuccaJamSandwichDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodYuccaJamSandwichSchematic,items,Food,New,Yucca Sandwich Recipe
+
+foodCoffeeCake,items,Food,New,Coffee Cake
+foodCoffeeCakeDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodCoffeeCakeSchematic,items,Food,New,Coffee Cake Recipe
+
+foodMushroomPie,items,Food,New,Mushroom Pie
+foodMushroomPieDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodMushroomPieSchematic,items,Food,New,Mushroom Pie Recipe
+
+foodMeatAndBeerPie,items,Food,New,Meat and Beer Pie
+foodMeatAndBeerPieDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodMeatAndBeerPieSchematic,items,Food,New,Meat and Beer Pie Recipe
+
+foodFriedMushrooms,items,Food,New,Fried Mushrooms
+foodFriedMushroomsDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodFriedMushroomsSchematic,items,Food,New,Fried Mushrooms Recipe
+
+foodFriedEgg,items,Food,New,Fried Egg
+foodFriedEggDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodFriedEggSchematic,items,Food,New,Fried Egg Recipe
+
+foodFrenchToast,items,Food,New,French Toast
+foodFrenchToastDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodFrenchToastSchematic,items,Food,New,French Toast Recipe
+
+foodHoneyGlazedMeat,items,Food,New,Honey Glazed Meat
+foodHoneyGlazedMeatDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodHoneyGlazedMeatSchematic,items,Food,New,Honey Glazed Meat Recipe
+
+drinkBlueberrySoda,items,Food,New,Blueberry Soda
+drinkBlueberrySodaDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+drinkBlueberrySodaSchematic,items,Food,New,Blueberry Soda Recipe
+
+drinkKvassSoda,items,Food,New,Kvass Soda
+drinkKvassSodaDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+drinkKvassSodaSchematic,items,Food,New,Kvass Soda Recipe
+
+drinkCarbonatedWater,items,Food,New,Carbonated Water
+drinkCarbonatedWaterDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+drinkCarbonatedWaterSchematic,items,Food,New,Carbonated Water Recipe
+
+drinkDistilledVodka,items,Food,New,Distilled Vodka
+drinkDistilledVodkaDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+drinkDistilledVodkaSchematic,items,Food,New,Distilled Vodka Recipe
+
+
+foodSugarExtract,items,Food,New,Sugar Extract
+foodSugarExtractDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodSugarExtractSchematic,items,Food,New,Sugar Extract Recipe
+
+foodRockCandy,items,Food,New,Rock Candy
+foodRockCandyDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodRockCandySchematic,items,Food,New,Rock Candy Recipe
+
+foodBlueberryCandy,items,Food,New,Blueberry Candy
+foodBlueberryCandyDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodBlueberryCandySchematic,items,Food,New,Blueberry Candy Recipe
+
+
+foodPlainFudge,items,Food,New,Plain Fudge
+foodPlainFudgeDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodPlainFudgeSchematic,items,Food,New,Plain Fudge Recipe
+
+medicalEnergyTablet,items,Food,New,Energy Tablet
+medicalEnergyTabletDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+medicalEnergyTabletSchematic,items,Food,New,Energy Tablet Recipe
+
+foodSpongeCake,items,Food,New,Sponge Cake
+foodSpongeCakeDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodSpongeCakeSchematic,items,Food,New,Sponge Cake Recipe
+
+foodBlueberrySpongeCake,items,Food,New,Blueberry Sponge Cake
+foodBlueberrySpongeCakeDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodBlueberrySpongeCakeSchematic,items,Food,New,Blueberry Sponge Cake Recipe
+
+foodYuccaSpongeCake,items,Food,New,Yucca Sponge Cake
+foodYuccaSpongeCakeDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodYuccaSpongeCakeSchematic,items,Food,New,Yucca Sponge Cake Recipe
+
+foodCustardPie,items,Food,New,Custard Pie
+foodCustardPieDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
+foodCustardPieSchematic,items,Food,New,Custard Pie Recipe
+
+
+drinkHealthDrink,items,Food,New,Health Drink
+drinkHealthDrinkDesc,items,Food,New,Drink This and Gain Your Health and Energy Back!
+drinkHealthDrinkSchematic,items,Food,New,Health Drink Recipe
+
+foodHamburger,items,Food,New,Hamburger
+foodHamburgerDesc,items,Food,New,It Has a good smell and looks tasty.
+foodHamburgerSchematic,items,Food,New,Hamburger Recipe
+
+foodBaconEggSandwich,items,Food,New,Bacon and Egg Sandwich
+foodBaconEggSandwichDesc,items,Food,New,You made this good looking sandwich.
+foodBaconEggSandwichSchematic,items,Food,New,Bacon and Egg Sandwich Recipe
+
+foodFishPie,items,Food,New,Fish Pie
+foodFishPieDesc,items,Food,New,The Can of Tuna Maybe rotten but you did a good job making this food!
+foodFishPieSchematic,items,Food,New,Fish Pie Recipe
+
+foodHoneyHam,items,Food,New,Honey Ham
+foodHoneyHamDesc,items,Food,New,MmmHH Very good meal.
+foodHoneyHamSchematic,items,Food,New,Honey Ham Recipe
+
+foodGrillSteak,items,Food,New,Grilled Steak
+foodGrillSteakDesc,items,Food,New,Better then Grilled meat.
+foodGrillSteakSchematic,items,Food,New,Grilled Steak Recipe
+
+foodGrillSteakSandwich,items,Food,New,Grilled Steak Sandwich
+foodGrillSteakSandwichDesc,items,Food,New,You Made the Steak Even Better!
+foodGrillSteakSandwichSchematic,items,Food,New,Grilled Steak Sandwich Recipe
+
+foodBiscuit,items,Food,New,Biscuit
+foodBiscuitDesc,items,Food,New,Biscuits are delicious by themselves but their best use is spreading some jam on them.
+foodBiscuitSchematic,items,Food,New,Biscuit Recipe
+
+foodBiscuitWithJam,items,Food,New,Biscuit With Jam
+foodBiscuitWithJamDesc,items,Food,New,Handmade biscuit smeared with a nice layer of blueberry jam.
+foodBiscuitWithJamSchematic,items,Food,New,Biscuit With Jam Recipe
+
+foodRamenSoup,items,Food,New,Ramen Soup
+foodRamenSoupDesc,items,Food,New,Nice you made a bowl of Ramen Soup Not the best if you ask me.
+foodRamenSoupSchematic,items,Food,New,Ramen Soup Recipe
+
+foodTunaSandwichJT,items,Food,New,Tuna Sandwich
+foodTunaSandwichJTDesc,items,Food,New,Not the best sandwich but eatable.
+foodTunaSandwichJTSchematic,items,Food,New,Tuna Sandwich Recipe
+
+foodMysteryMeat,items,Food,New,Mystery Meat
+foodMysteryMeatDesc,items,Food,New,It doesn't smell terrible but you don't know how much faith you should put in Hotrod.
+foodMysteryMeatSchematic,items,Food,New,Mystery Meat Recipe
+
+foodMysteryMeatCrafted,items,Food,New,Mystery Meat
+foodMysteryMeatCraftedDesc,items,Food,New,It doesn't smell terrible but you don't know how much faith you should put in Hotrod.
+foodMysteryMeatCraftedSchematic,items,Food,New,Mystery Meat Recipe
+
+foodCandyBar,items,Food,New,Candy Bar
+foodCandyBarDesc,items,Food,New,Diabeetus what diabeetus. This is the apocalypse so have at it and shove that candy in your mouth like there is no tomorrow!
+
+foodGoldfish,items,Food,New,Goldfish
+foodGoldfishDesc,items,Food,New,The snack that smiles back!? SCORE.
+
+foodRamenNoodles,items,Food,New,Ramen Noodles
+foodRamenNoodlesDesc,items,Food,New,You Can make this into a soup or you can eat it.
+
+foodBagOfChips,items,Food,New,Bag Of Chips
+foodBagOfChipsDesc,items,Food,New,Bet you can not eat just one!
+
+foodBagOfHotChips,items,Food,New,Bag Of Hot Chips
+foodBagOfHotChipsDesc,items,Food,New,Spicy goodness!
+
+
+qc_hotrod,items,Food,New,Hotrod Challenge
+qc_Feedthemole,items,Food,New,Feed The Mole Challenge
+qc_Sandwich,items,Food,New,Sandwich Challenge
+
+
+peculiarTasteNAME,buffs,Buff,New,Peculiar Taste
+
+
+
+breakfastBook,items,Book,New,Home Cooking Vol 1: Knights Morning Meats,,,,,
+dinnerBook,items,Book,New,Home Cooking Vol 2: Wookies Eats,,,,,
+stewsBook,items,Book,New,Home Cooking Vol 3: Sinders Stews,,,,,
+bakingBook,items,Book,New,Home Cooking Vol 4: Fallens Baked Goods,,,,,
+drinksBook,items,Book,New,Home Cooking Vol 5: Tea Time With Shorty,,,,,
+breakfastBookDesc,items,Book,New,"Unlocks breakfast related recipes.",,,,
+dinnerBookDesc,items,Book,New,"Unlocks dinner and sides related recipes.",,,,
+stewsBookDesc,items,Book,New,"Unlocks delicious hearty stews.",,,,
+bakingBookDesc,items,Book,New,"Unlocks baked goods and supplies.",,,,
+drinksBookDesc,items,Book,New,"Unlocks drinks and teas.",,,,
+sandwichBook,items,Book,New,Home Cooking Vol 6: Shades Mouth Watering Sandwiches,,,,,
+sandwichBookDesc,items,Book,New,"Unlocks sandwich related recipes.",,,,
+foodSmokerSchematic,items,Book,New,Home Smoker Foods Schematic,,,,,
+foodEggBaconSandwichSchematic,items,Book,New,Bacon Egg On A Hero Schematic,,,,,
+foodSoupMushroomSchematic,items,Book,New,Mushroom Soup Schematic,,,,,
+
+
+
+foodVinegar,items,Food,New,Vinegar,,,,,
+foodMayonnaise,items,Food,New,Mayonnaise,,,,,
+foodBrisket,items,Food,New,Brisket,,,,,
+foodPulledPorkSandwich,items,Food,New,Pulled Pork Sandwich,,,,,
+foodPulledPorkSandwichDesc,items,Food,New,Never eat something this good on a Blood Moon.,,,,,
+foodPulledPork,items,Food,New,Pulled Pork,,,,,
+foodBeerCanChicken,items,Food,New,Beer Can Chicken,,,,,
+foodSushi,items,Food,New,Sushi,,,,,
+foodPickles,items,Food,New,Pickles,,,,,
+foodColeSlaw,items,Food,New,Cole Slaw,,,,,
+foodFriedBacon,items,Food,New,Fried Bacon,,,,,
+foodFriedBaconDesc,items,Food,New,It does not get any better.,,,,,
+foodBaguette,items,Food,New,Baguette,,,,,
+foodBaguetteDesc,items,Food,New,Add some sophistication to your sandwiches.,,,,,
+foodFreshSteak,items,Food,New,Fresh Steak,,,,,
+foodFreshSmokedSausage,items,Food,New,Fresh Smoked Sausage,,,,,
+foodFreshBBQChickenLegs,items,Food,New,Fresh BBQ Chicken Legs,,,,,
+foodDeulxeHamCheeseSandwich,items,Food,New,Ham and Cheese Deluxe,,,,,
+foodChickenBaconSandwich,items,Food,New,Chicken and Bacon Sandwich,,,,,
+foodSalmonCreamCheeseSandwich,items,Food,New,Salmon and Cream Cheese Sandwich,,,,,
+foodEggBaconSandwich,items,Food,New,Bacon Egg On A Hero,,,,,
+foodSteakSandwich,items,Food,New,Steak Sandwich,,,,,
+foodBakedPotatoSandwich,items,Food,New,Baked Potato Sandwich,,,,,
+foodDeluxeFishSandwich,items,Food,New,Fish Deluxe,,,,,
+foodPorkCreamCheeseSandwich,items,Food,New,Pork and Cream Cheese Sandwich,,,,,
+foodShadesDanishFishDish,items,Food,New,Shades Danish Fish Dish,,,,,
+foodPatsSteak,items,Food,New,Pats Classic Steak Sandwich,,,,,
+foodTunaBLTSandwich,items,Food,New,Tuna BLT,,,,,
+foodPatsSteakDesc,items,Food,New,Pat's Steak Sandwich,,,,,
+resourceDough,items,Food,New,Dough,,,,,
+resourceDoughDesc,items,Food,New,Ingredient used in pasta and breads.,,,,,
+foodBagel,items,Food,New,Bagel,,,,,
+foodBagelDesc,items,Food,New,Is it a New York bagel though?,,,,,
+foodCheese,items,Food,New,Cheese,,,,,
+drinkMilk,items,Food,New,Milk,,,,,
+foodCream,items,Food,New,Cream,,,,,
+foodCreamCheese,items,Food,New,Cream Cheese,,,,,
+drinkMilkDesc,items,Food,New,"Holy balls! Milk? Still? Better check that expiration date pal!",,,,,
+foodCreamDesc,items,Food,New,Delicious cream can make anything better. Or just drink it moose.,,,,,
+foodCreamCheeseDesc,items,Food,New,What you wouldn't give for a bagel with cream cheese. Hmmmm.,,,,,
+
+foodBoiledCabbageJT,items,Food,New,Boiled Cabbage,,,,,
+foodBoiledCabbageJTDesc,items,Food,New,An Irish tradition and a great way to warm a survivors heart.,,,,,
+foodOmelet,items,Food,New,Omelet,,,,,
+foodOmeletDesc,items,Food,New,A great way to start out your day of looting rotten homes and burnt out stores.,,,,,
+foodGrillPork,items,Food,New,Grilled Pork,,,,,
+foodGrillChicken,items,Food,New,Grilled Chicken,,,,,
+foodSoupMushroom,items,Food,New,Mushroom Soup,,,,,
+foodGrilledCorn,items,Food,New,Grilled Corn,,,,,
+foodGrilledMushrooms,items,Food,New,Grilled Mushrooms,,,,,
+foodGrilledPotato,items,Food,New,Grilled Potato,,,,,
+
+foodBaconMacCheese,items,Food,New,Bacon Mac and Cheese,,,,,
+foodBaconMacCheeseDesc,items,Food,New,Macaroni and cheese was a childhood favorite of many.,,,,,
+foodHoagie,items,Food,New,East Coast Hoagie,,,,,
+foodBLT,items,Food,New,BLT,,,,,
+foodHamCheese,items,Food,New,Ham and Cheese Sandwich,,,,,
+foodSausagePeppers,items,Food,New,Sausage and Peppers Hero,,,,,
+foodMeatballSub,items,Food,New,Meatball Sub,,,,,
+foodMeatballSubDesc,items,Food,New,Giovanni made it just for you. Are you going to complain?,,,,,
+specialtySandwichDesc,items,Food,New,Precision crafted specialty sandwiches provide the best nutrition and offer a taste of regional bliss.,,,,,
+picklesDesc,items,Food,New,Some among us value the pickle above twine. Be very wary of those individuals.,,,,,
+coleSlawDesc,items,Food,New,A delicious treat,,,,,
+foodRawPasta,items,Food,New,Raw Pasta,,,,,
+foodRawPastaDesc,items,Food,New,You are on your way to being your own Lagasse,,,,,
+
+foodSnoBalls,items,Food,New,Sno Balls,,,,,
+foodTwinkies,items,Food,New,Twinkies,,,,,
+foodCheezIts,items,Food,New,CheezIts,,,,,
+foodBagChipsHotDesc,items,Food,New,Hot Bag of Chips,,,,,
+foodBagChipsDesc,items,Food,New,Bag of Chips,,,,,
+foodShortyBarDesc,items,Food,New,Shorty Bar,,,,,
+foodChocBarDesc,items,Food,New,Chocolate Bar,,,,,
+foodHoneyGlazedHam,items,Food,New,Honey Glazed Ham,,,,,
+foodHoneyGlazedHamDesc,items,Food,New,Glazed with the amazing power of antibiotic. Maybe.,,,,,
+foodFreshKobeBeef,items,Food,New,Kobe Beef,,,,,
+foodFreshButter,items,Food,New,Butter,,,,,
+foodFreshBaconMeatloaf,items,Food,New,Bacon Meatloaf,,,,,
+foodFreshMilk,items,Food,New,Milk,,,,,
+foodFreshBakedChickenBreast,items,Food,New,Baked Chicken Breast,,,,,
+foodSpicyHotWings,items,Food,New,Spicy Hot Wings,,,,,
+foodFreshHoneyGlazedHam,items,Food,New,Honey Glazed Ham,,,,,
+foodBread,items,Food,New,Bread,,,,,
+foodBreadDesc,items,Food,New,Another easy to produce vital survival food. Use it to make a number of dishes and sandwiches.,,,,,
+foodSnoBallsDesc,items,Food,New,Sno Balls? Where's the fucking Twinkies? Sno Balls?,,,,,
+foodCheezItsDesc,items,Food,New,The perfect blend of cracker and cheese. Perfect for snacking and heavy enough to remind people you mean business when thrown.,,,,,
+foodTwinkiesDesc,items,Food,New,"Seems like you made it here before Tallahassee did so enjoy the spongy, yellow, delicious bastards.",,,,,
+foodBagChipsHotDesc,items,Food,New,A bag of crispy salted potato chips. They're hot and best eaten with a drink at the ready.,,,,,
+foodBagChipsDesc,items,Food,New,A bag of crispy salted potato chips.,,,,,
+foodShortyBarDesc,items,Food,New,Eating this bar will give you the power of Mighty Mouse!,,,,,
+foodChocBarDesc,items,Food,New,Diabeetus what diabeetus. This is the apocalypse so have at it and shove that candy in your mouth like there is no tomorrow.,,,,,
+foodGrilledCornDesc,items,Food,New,Grilling your vegetables is a great way to make a quick nutritious snack.,,,,,
+foodGrilledMushroomsDesc,items,Food,New,Grilling your vegetables is a great way to make a quick nutritious snack.,,,,,
+foodGrilledPotatoDesc,items,Food,New,Grilling your vegetables is a great way to make a quick nutritious snack.,,,,,
+foodVinegarDesc,items,Food,New,Vinegar is a very common ingredient for many recipes.,,,,,
+foodMayonnaiseDesc,items,Food,New,Mayonnaise can be used to add the perfect finishing touch on sandwiches.,,,,,
+foodBrisketDesc,items,Food,New,Smoking meats provides massive benefits to you mentally and physically. Take it back to the days before the apocalypse and when cookouts were your weekend getaway.,,,,,
+foodPulledPorkDesc,items,Food,New,Smoking meats provides massive benefits to you mentally and physically. Take it back to the days before the apocalypse and when cookouts were your weekend getaway.,,,,,
+foodBeerCanChickenDesc,items,Food,New,Smoking meats provides massive benefits to you mentally and physically. Take it back to the days before the apocalypse and when cookouts were your weekend getaway.,,,,,
+foodTrailMixJT,items,Food,New,Survival Mix,,,,,
+foodTrailMixJTDesc,items,Food,New,Survival Mix is a great survival food that can be easily made and provides you with a nutritious snack.,,,,,
+foodJerkyJT,items,Food,New,Dried Jerky,,,,,
+foodJerkyJTDesc,items,Food,New,Jerky is made from drying and curing meat and can give a great boost to your hunger.,,,,,
+foodSaltJT,items,Food,New,Salt,,,,,
+foodSaltJTDesc,items,Food,New,Salt is worth it's weight in gold. In old times it was a precious resource. Salt can be used to cure meats and preserve food.,,,,,
+resourceSaltJT,items,Food,New,Salt Deposit,,,,,
+resourceSaltJTDesc,items,Food,New,Mined salt deposits can be collected and boiled with clean water to make useable salt.,,,,,
+foodButterJT,items,Food,New,Butter
+foodButterJTDesc,items,Food,New,"Butter compliments every meal and is a key ingredient in larger dishes."
+drinkFrozenIceeJT,items,Food,New,Icee,,,,,
+drinkCanSodaJT,items,Food,New,Can of Soda,,,,,
+drinkFrozenIceeJTDesc,items,Food,New,You remember these from a happier time. You can not believe this machine still works. Wonder if the water is still good in this. You can not resist. It's cherry! This helps you survive in severely warm environments.,,,,,
+drinkCanSodaJTDesc,items,Food,New,The diabeetus was sure kicking your ass before all this happened but it's the end of the world as we know it anyway and you feel fine so.,,,,,
+drinkYuccaJuiceSmoothieDesc,items,Food,New,This smoothie helps you survive in severely warm environments.,,,,,
+resourceCropDriedChrysanthemumJT,items,Farming,New,Dried Chrysanthemum Leaves,,,,,
+resourceCropDriedChrysanthemumJTDesc,items,Farming,New,Dried chrysanthemum leaves can be used to make red tea.,,,,,
+resourceCropDriedGoldenrodJT,items,Farming,New,Dried Goldenrod Leaves,,,,,
+resourceCropDriedGoldenrodJTDesc,items,Farming,New,Dried goldenrod leaves can be used to make goldenrod tea.,,,,,
+drinkJarKoolAid,items,Food,New,Kook Aid,,,,,
+drinkJarKoolAidDesc,items,Food,New,Nothing gets you busting through walls with energy better than a red drink!,,,,,
+foodPieCrustJT,items,Food,New,Pie Crust,,,,,
+foodPieCrustJTDesc,items,Food,New,The best crust you can make given the situation. Enjoy the flaky goodness.,,,,,
+foodFlourJT,items,Food,New,Flour,,,,,
+foodFlourJTDesc,items,Food,New,Used for making bread and pies. NOT what you thought it was. Better wipe your nose before the gang suspects something.,,,,,

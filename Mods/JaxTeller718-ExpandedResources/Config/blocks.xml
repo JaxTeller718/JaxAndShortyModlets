@@ -1,0 +1,32 @@
+<JaxTeller718>
+
+	<insertAfter xpath="/blocks/block[@name='treeMaster']/drop[@event='Destroy']">
+		<drop event="Harvest" name="resourceStickJT" count="15" tag="allHarvest"/>
+	</insertAfter>
+
+	<insertAfter xpath="/blocks/block[@name='treeGrassMaster']/drop[@event='Destroy']">
+		<drop event="Destroy" name="resourceStickJT" count="1" prob="0.45"/>
+	</insertAfter>
+	<insertAfter xpath="/blocks/block[@name='sectionalPlaidCouchSofaMiddle']/drop[@event='Destroy']">
+		<drop event="Harvest" name="resourceTwineJT" count="1,2" prob="0.55" tag="allHarvest"/>
+	</insertAfter>
+	
+	<insertAfter xpath="/blocks/block[@name='curtain_top1Sheet3']/drop[@event='Destroy']">
+		<drop event="Destroy" name="resourceTwineJT" count="1,2" prob="0.55"/>
+	</insertAfter>
+
+	<append xpath="/blocks/block
+[
+@name='secureDoorWooden'
+or (contains(@name, 'woodFrameMaster'))
+		
+]
+/property
+[
+@class='RepairItems'
+]">
+		<property name="resourceWoodNail" value="2"/>
+	</append>
+
+
+</JaxTeller718>

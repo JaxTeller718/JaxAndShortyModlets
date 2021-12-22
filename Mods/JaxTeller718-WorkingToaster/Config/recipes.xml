@@ -1,0 +1,43 @@
+<JaxTeller718>
+	<remove xpath="/recipes/recipe[@name='foodCornBread']"/>
+	<remove xpath="/recipes/recipe[@name='foodTunaFishGravyToast']"/>
+	<append xpath="/recipes">
+		<recipe name="foodCornBread" count="1" craft_time="3" craft_area="campfire" craft_tool="toolCookingPot">
+			<ingredient name="foodCornMeal" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+
+		<recipe name="foodToastedBread" count="1" craft_time="3" craft_area="toasterJT">
+			<ingredient name="foodButterJT" count="1"/>
+			<ingredient name="foodCornBread" count="2"/>
+		</recipe>
+		<recipe name="foodYuccaJamAndToast" count="1" craft_time="3" craft_area="toasterJT">
+			<ingredient name="foodYuccaJam" count="1"/>
+			<ingredient name="foodCornBread" count="2"/>
+		</recipe>
+		<recipe name="foodBlueberryJamAndToast" count="1" craft_time="3" craft_area="toasterJT">
+			<ingredient name="foodBlueberryJam" count="1"/>
+			<ingredient name="foodCornBread" count="2"/>
+		</recipe>
+		<recipe name="foodTunaFishGravyToast" count="1" craft_time="3" craft_area="toasterJT" tags="perkMasterChef,learnable">
+			<ingredient name="foodCanTuna" count="1"/>
+			<ingredient name="foodCornMeal" count="1"/>
+			<ingredient name="foodCornBread" count="2"/>
+			<ingredient name="foodButterJT" count="3"/>
+			<ingredient name="foodCanPeas" count="1"/>
+			<effect_group>
+				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodButterJT"/>
+			</effect_group>
+		</recipe>
+	</append>
+
+	<insertAfter xpath="/recipes/recipe[@name='foodBlueberryPie']/ingredient[@name='drinkJarBoiledWater']">
+		<ingredient name="drinkBowlEmptyJT" count="1"/>
+	</insertAfter>
+	<insertAfter xpath="/recipes/recipe[@name='foodPumpkinPie']/ingredient[@name='drinkJarBoiledWater']">
+		<ingredient name="drinkBowlEmptyJT" count="1"/>
+	</insertAfter>
+	<insertAfter xpath="/recipes/recipe[@name='foodPumpkinCheesecake']/ingredient[@name='drinkJarBeer']">
+		<ingredient name="drinkBowlEmptyJT" count="1"/>
+	</insertAfter>
+</JaxTeller718>
