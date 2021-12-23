@@ -65,7 +65,7 @@
 		<property name="difficulty" value="veryeasy"/>
 		<property name="shareable" value="false"/>
 
-		<objective type="FetchKeep" id="resourceYuccaFibers" value="14" phase="1"/>
+		<objective type="FetchKeep" id="resourceYuccaFibers" value="22" phase="1"/>
 		<objective type="FetchKeep" id="resourceFiberCordageJT" value="4" phase="1"/>
 		
 		<objective type="Craft" id="apparelPlantFiberPants" value="1" phase="2"/>
