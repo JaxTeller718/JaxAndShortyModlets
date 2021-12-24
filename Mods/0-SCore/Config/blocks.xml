@@ -69,7 +69,7 @@
         <!-- Only way to kill them is through head shots -->
         <property name="RandomSize" value="false" />
         <!-- Give them random sizes for more variety -->
-        <property name="RandomWalk" value="true" />
+        <property name="RandomWalk" value="false" />
 		
         <!-- Give them random walks. -->
 
