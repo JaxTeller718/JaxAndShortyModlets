@@ -68,7 +68,7 @@
 			<drop event="Destroy" name="resourceScrapIron" count="0"/>
 			<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 			<property name="DescriptionKey" value="creativeMenuBlockGroupDesc"/>
-			<property name="EconomicValue" value="45"/>
+			<property name="EconomicValue" value="125"/>
 			<property name="EconomicBundleSize" value="1"/>
 			<property name="Group" value="Decor/Miscellaneous"/>
 			<property name="FilterTags" value="floot,fdecor,fother,ffurniture"/>

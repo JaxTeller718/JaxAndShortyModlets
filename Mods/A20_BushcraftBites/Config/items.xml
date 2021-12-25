@@ -205,36 +205,7 @@
 	</effect_group>
 </item>
 
-<item name="foodBushcraftHideAndSeek">
-	<property name="Tags" value="food"/>
-	<property name="HoldType" value="31"/>
-	<property name="DisplayType" value="foodWater"/>
-	<property name="CustomIcon" value="foodShamChowder"/>
-	<property name="DescriptionKey" value="foodBushcraftHideAndSeekDesc"/>
-    <property name="CustomIconTint" value="200,135,0"/>	
-	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
-	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
-	<property name="EconomicValue" value="134"/>
-	<property name="UnlockedBy" value="perkMasterChef"/>
-	<property class="Action0">
-		<property name="Class" value="Eat"/>
-		<property name="Delay" value="1.0"/>
-		<property name="Use_time" value="..."/>
-		<property name="Sound_start" value="player_drinking"/>
-		<!-- jar from cooking food <property name="Create_item" value="drinkJarEmpty"/> -->
-	</property>
-	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
-	<effect_group tiered="false" name="Food Tier 1">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="45"/> 
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="27"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="20"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-	</effect_group>
-</item>
 
 <item name="foodBushcraftAcornBread">
 	<property name="Tags" value="food"/>
@@ -304,38 +275,7 @@
 
 	<!-- BUSHCRAFT BITES FOOD ITEMS - GRILL TOOL -->
 	
-<item name="foodBushcraftLeatherface">
-	<property name="Tags" value="food"/>
-	<property name="HoldType" value="31"/>
-	<!-- <property name="DisplayType" value="food"/> -->
-	<property name="DisplayType" value="foodWaterNegative"/>
-	<property name="CustomIcon" value="resourceLeather"/>
-	<property name="DescriptionKey" value="foodBushcraftLeatherfaceDesc"/>
-    <property name="CustomIconTint" value="90,45,10"/>	
-	<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
-	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-	<property name="Material" value="Morganic"/>
-	<property name="Stacknumber" value="25"/> <!-- STK food -->
-	<property name="EconomicValue" value="16"/>
-	<property name="UnlockedBy" value="perkMasterChef"/>
-	<property class="Action0">
-		<property name="Class" value="Eat"/>
-		<property name="Delay" value="1.0"/>
-		<property name="Use_time" value="..."/>
-		<property name="Sound_start" value="player_eating"/>
-		<!-- jar from cooking food <property name="Create_item" value="drinkJarEmpty"/> -->
-	</property>
-	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
 
-	<effect_group tiered="false" name="Food Tier 1">
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="10"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-5"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="5"/>
-		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-		<display_value name="$waterAmountAdd" value="-5"/>
-	</effect_group>
-</item>
 
 <item name="foodBushcraftBlueberryRolls">
 	<property name="Tags" value="food"/>
@@ -495,7 +435,7 @@
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffDysenteryAddCure"/>
 			
 			<display_value name="dCureInfection" value=".1"/>
-			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="10"/>
+			<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$buffInfectionAddCurePerc" operation="add" value="15"/>
 			<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffInfectionAddCure"/>			
 	</effect_group>
 

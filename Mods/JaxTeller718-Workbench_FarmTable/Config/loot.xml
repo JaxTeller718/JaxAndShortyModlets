@@ -1,0 +1,5 @@
+<config>
+	<append xpath="/lootcontainers/lootgroup[@name='schematicsToolsT0']">
+		<item name="farmTableJTSchematic"/>
+	</append>
+</config>

@@ -30,14 +30,10 @@
 			</effect_group>
 		</recipe>
 	</append>
+	
+	
+	<set xpath="/recipes/recipe[@name='foodBlueberryPie']/ingredient[@name='drinkJarBoiledWater']/@name">drinkBowlEmptyJT</set>
+	<set xpath="/recipes/recipe[@name='foodPumpkinPie']/ingredient[@name='drinkJarBoiledWater']/@name">drinkBowlEmptyJT</set>
+	<set xpath="/recipes/recipe[@name='foodPumpkinCheesecake']/ingredient[@name='drinkJarBeer']/@name">drinkBowlEmptyJT</set>
 
-	<insertAfter xpath="/recipes/recipe[@name='foodBlueberryPie']/ingredient[@name='drinkJarBoiledWater']">
-		<ingredient name="drinkBowlEmptyJT" count="1"/>
-	</insertAfter>
-	<insertAfter xpath="/recipes/recipe[@name='foodPumpkinPie']/ingredient[@name='drinkJarBoiledWater']">
-		<ingredient name="drinkBowlEmptyJT" count="1"/>
-	</insertAfter>
-	<insertAfter xpath="/recipes/recipe[@name='foodPumpkinCheesecake']/ingredient[@name='drinkJarBeer']">
-		<ingredient name="drinkBowlEmptyJT" count="1"/>
-	</insertAfter>
 </JaxTeller718>

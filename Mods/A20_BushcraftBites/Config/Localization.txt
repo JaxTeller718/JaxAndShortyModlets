@@ -12,8 +12,6 @@ foodBushcraftBaconEggGrits,items,Food,,,Bushcraft Bacon and Egg on Grits
 foodBushcraftBaconEggGritsDesc,items,Food,,,"Prepares a survivor for the day ahead."
 foodBushcraftSuperCornOnTheCob,items,Food,,,Bushcraft Super Corn on the Cob
 foodBushcraftSuperCornOnTheCobDesc,items,Food,,,"With no artificial colors, flavorings, or preservatives...or so they say. Gives 2% XP Boost."
-foodBushcraftHideAndSeek,items,Food,,,Bushcraft Hide and Seek
-foodBushcraftHideAndSeekDesc,items,Food,,,"Eggs or eyeballs, it's all good stuff."
 foodBushcraftAcornBread,items,Food,,,Bushcraft Acorn Bread
 foodBushcraftAcornBreadDesc,items,Food,,,"A simple bread using an abundant resource."
 foodBushcraftPineConeJam,items,Food,,,Bushcraft Pine Cone Jam

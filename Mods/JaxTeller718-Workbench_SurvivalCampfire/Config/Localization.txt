@@ -1,0 +1,4 @@
+﻿Key,Source,Context,English
+survivalCampfireJT,blocks,Block,Survival Campfire,,,,,
+survivalCampfireJTDesc,blocks,Block,The survival campfire can cook more advanced meals than a normal campfire.,,,,,
+

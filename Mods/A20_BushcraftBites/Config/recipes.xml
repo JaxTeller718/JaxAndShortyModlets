@@ -46,12 +46,7 @@
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
-<recipe name="foodBushcraftHideAndSeek" count="1" craft_time="75" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef">
-	<ingredient name="resourceLeather" count="2"/>
-	<ingredient name="foodEggBoiled" count="2"/> <!-- Food 10 x 2 / Health 5 x 2 -->
-	<ingredient name="foodCanChicken" count="1"/> <!-- Food 15 / Health 7 -->
-	<ingredient name="drinkJarBoiledWater" count="1"/>
-</recipe>
+
 
 <recipe name="foodBushcraftAcornBread" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 	<ingredient name="foodBushcraftAcornMeal" count="1"/>
@@ -67,10 +62,7 @@
 
 	<!-- BUSHCRAFT BITES FOOD ITEMS - GRILL TOOL -->
 
-<recipe name="foodBushcraftLeatherface" count="1" craft_time="45" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef">
-	<ingredient name="resourceLeather" count="2"/>
-	<ingredient name="resourceOil" count="1"/>	
-</recipe>
+
 
 <recipe name="foodBushcraftBlueberryRolls" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef">
 	<ingredient name="foodCropBlueberries" count="10"/>

@@ -1,0 +1,11 @@
+<JaxTeller718>
+	<append xpath="/ui_display_info/crafting_category_display">
+		<crafting_category_list display_type="farmTableJT">
+			<crafting_category name="Building" icon="ui_game_symbol_map_house" display_name="lblCategoryBuilding"/>
+			<crafting_category name="Resources" icon="ui_game_symbol_resource" display_name="lblCategoryResources"/>
+			<crafting_category name="Science" icon="ui_game_symbol_science" display_name="lblCategoryScience"/>
+			<crafting_category name="Food/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFoodCooking"/>
+			<crafting_category name="Decor/Miscellaneous" icon="ui_game_symbol_chair" display_name="lblCategoryDecorMisc"/>
+		</crafting_category_list>
+	</append>
+</JaxTeller718>

@@ -69,11 +69,11 @@
 			<ingredient name="foodCornMeal" count="1"/>
 			<ingredient name="foodButterJT" count="1"/>
 		</recipe>
-		<recipe name="foodBlueberryJamSandwich" count="1" craft_time="8" craft_area="campfire">
+		<recipe name="foodBlueberryJamSandwich" count="1" craft_time="8" craft_area="toasterJT">
 			<ingredient name="foodBread" count="1"/>
 			<ingredient name="foodBlueberryJam" count="1"/>
 		</recipe>
-		<recipe name="foodYuccaJamSandwich" count="1" craft_time="8" craft_area="campfire">
+		<recipe name="foodYuccaJamSandwich" count="1" craft_time="8" craft_area="toasterJT">
 			<ingredient name="foodBread" count="1"/>
 			<ingredient name="foodYuccaJam" count="1"/>
 		</recipe>
@@ -153,15 +153,15 @@
 			<ingredient name="foodCornMeal" count="3"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 		</recipe>
-		<recipe name="foodBiscuitWithJam" count="1" craft_time="5" craft_area="campfire" tags="perkMasterChef,learnable">
+		<recipe name="foodBiscuitWithJam" count="1" craft_time="5" craft_area="toasterJT" tags="perkMasterChef,learnable">
 			<ingredient name="foodBlueberryJam" count="2"/>
 			<ingredient name="foodBiscuit" count="1"/>
 		</recipe>
-		<recipe name="foodBiscuitWithJam" count="1" craft_time="12" craft_area="campfire" tags="perkMasterChef,learnable">
+		<recipe name="foodBiscuitWithJam" count="1" craft_time="12" craft_area="toasterJT" tags="perkMasterChef,learnable">
 			<ingredient name="foodYuccaJam" count="2"/>
 			<ingredient name="foodBiscuit" count="1"/>
 		</recipe>
-		<recipe name="foodRamenSoup" count="1" craft_time="30" craft_area="campfire" tags="perkMasterChef,learnable" craft_tool="toolCookingPot">
+		<recipe name="foodRamenSoup" count="1" craft_time="30" craft_area="microwaveJT" tags="perkMasterChef,learnable">
 			<ingredient name="foodRamenNoodles" count="1"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 		</recipe>
@@ -193,12 +193,12 @@
 			<ingredient name="foodFriedBacon" count="1"/>
 		</recipe>
 
-		<recipe name="foodTunaSandwichJT" count="1" tags="learnable" craft_area="campfire" craft_tool="toolCookingGrill">
+		<recipe name="foodTunaSandwichJT" count="1" tags="learnable" craft_area="toasterJT">
 			<ingredient name="foodCanTuna" count="2"/>
 			<ingredient name="foodBread" count="2"/>
 			<ingredient name="foodMayonnaise" count="1"/>
 		</recipe>
-		<recipe name="foodOmelet" count="1" craft_area="campfire" tags="learnable">
+		<recipe name="foodOmelet" count="1" craft_area="campfire" tags="learnable" craft_tool="toolCookingPot">
 			<ingredient name="foodEgg" count="2"/>
 			<ingredient name="resourceAnimalFat" count="2"/>
 		</recipe>

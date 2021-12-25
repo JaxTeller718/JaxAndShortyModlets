@@ -1,0 +1,4 @@
+﻿Key,Source,Context,English
+farmTableJT,blocks,Workstation,Farming Table,,,,,
+farmTableJTDesc,blocks,Workstation,"Your farming table will make fertilizer and seeds.",,,,,
+farmTableJTSchematic,blocks,Workstation,Farming Table Schematic,,,,,

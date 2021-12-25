@@ -1,0 +1,11 @@
+<JaxTeller718>
+	<setattribute xpath="/recipes/recipe[ starts-with(@name, 'planted') or (contains(@name, 'decoPumpkin'))	 ]" name="craft_area">farmTableJT</setattribute>
+	<append xpath="/recipes">
+		<recipe name="farmTableJT" count="1" craft_area="workbench" craft_time="190" tags="learnable">
+			<ingredient name="resourceScrapIron" count="250"/>
+			<ingredient name="resourceNail" count="25"/>
+			<ingredient name="resourceWood" count="50"/>
+			<ingredient name="resourceFiberCordageJT" count="10"/>
+		</recipe>
+	</append>
+</JaxTeller718>
