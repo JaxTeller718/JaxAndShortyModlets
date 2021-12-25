@@ -121,7 +121,7 @@
       
       <property class="AdvancedWorkstationFeatures" >
         <property name="Logging" value="false"/>
-        <property name="EnablePoweredWorkstations" value="true" />
+        <property name="EnablePoweredWorkstations" value="false" />
       </property>
 
       <property class="AdvancedDialogDebugging" >
