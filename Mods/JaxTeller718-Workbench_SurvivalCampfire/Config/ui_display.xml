@@ -1,5 +1,15 @@
 <JaxTeller718>
+
+	<remove xpath="/ui_display_info/crafting_category_display/crafting_category_list[@display_type='campfire']"/>
+
+
 	<append xpath="/ui_display_info/crafting_category_display">
+	
+		<crafting_category_list display_type="campfire">
+			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood" />
+			<crafting_category name="CFDrink/Cooking" icon="ui_game_symbol_thirst" display_name="lblCategoryDrink" />
+		</crafting_category_list>
+		
 		<crafting_category_list display_type="survivalCampfireJT">
 			<!-- <crafting_category name="" icon="ui_game_symbol_campfire" display_name="lblAll" /><crafting_category name="Drink/Cooking" icon="ui_game_symbol_water" display_name="lblCategoryChemicals" /> -->
 			<crafting_category name="CFFood/Cooking" icon="ui_game_symbol_fork" display_name="lblCategoryFood"/>

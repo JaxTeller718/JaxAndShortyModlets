@@ -1,6 +1,6 @@
 <JaxTeller718>
 
-	<setattribute xpath="/recipes/recipe [	 	contains(@craft_area, 'campfire') and not(contains(@name, 'foodCharredMeat'))  and not(contains(@name, 'foodGrilledCorn'))  and not(contains(@name, 'foodGrilledPotato'))  and not(contains(@name, 'foodOmelet'))  and not(contains(@name, 'foodYuccaChips'))  and not(contains(@name, 'foodCornChips'))  and not(contains(@name, 'foodGrilledMeat'))  and not(contains(@name, 'foodGrilledMushrooms')) 		 ]" name="craft_area">survivalCampfireJT</setattribute>
+	<setattribute xpath="/recipes/recipe [	 	contains(@craft_area, 'campfire') and not(contains(@name, 'foodCharredMeat'))  and not(contains(@name, 'drinkCanRiverWater'))  and not(contains(@name, 'drinkCanBoiledWater'))  and not(contains(@name, 'foodGrilledCorn'))  and not(contains(@name, 'foodGrilledPotato'))  and not(contains(@name, 'foodOmelet'))  and not(contains(@name, 'foodYuccaChips'))  and not(contains(@name, 'foodCornChips'))  and not(contains(@name, 'foodGrilledMeat'))  and not(contains(@name, 'foodGrilledMushrooms')) 		 ]" name="craft_area">survivalCampfireJT</setattribute>
 
 	<append xpath="/recipes">
 		<recipe name="survivalCampfireJT" count="1" craft_time="10">
