@@ -1,0 +1,16 @@
+<configs>
+	<set xpath="/buffs/buff[@name='buffLegSprained']/effect_group/triggered_effect [@trigger='onSelfBuffStart']/@value">300</set>
+	<set xpath="/buffs/buff[@name='buffLegBroken']/effect_group/triggered_effect [@trigger='onSelfBuffStart']/@value">1800</set>
+	<set xpath="/buffs/buff[@name='buffLegBroken']/effect_group/triggered_effect [@trigger='onSelfBuffStart']/requirement/@value">1800</set>
+	<set xpath="/buffs/buff[@name='buffLegBroken']/effect_group/triggered_effect [@trigger='onSelfBuffStack']/@value">1800</set>
+	<set xpath="/buffs/buff[@name='buffLegBroken']/effect_group/triggered_effect [@trigger='onSelfBuffStack']/requirement/@value">1800</set>
+	<set xpath="/buffs/buff[@name='buffArmSprained']/effect_group/triggered_effect [@trigger='onSelfBuffStart']/@value">300</set>
+	<set xpath="/buffs/buff[@name='buffArmBroken']/effect_group/triggered_effect [@trigger='onSelfBuffStart']/@value">1800</set>
+	<set xpath="/buffs/buff[@name='buffArmBroken']/effect_group/triggered_effect [@trigger='onSelfBuffStart']/requirement/@value">1800</set>
+	<set xpath="/buffs/buff[@name='buffArmBroken']/effect_group/triggered_effect [@trigger='onSelfBuffStack']/@value">1800</set>
+	<set xpath="/buffs/buff[@name='buffArmBroken']/effect_group/triggered_effect [@trigger='onSelfBuffStack']/requirement/@value">1800</set>
+	<set xpath="/buffs/buff[@name='buffLaceration']/effect_group/triggered_effect [@trigger='onSelfBuffStart']/@value">1800</set>
+	<set xpath="/buffs/buff[@name='buffLaceration']/effect_group/triggered_effect [@trigger='onSelfBuffStack']/@value">1800</set>
+	<set xpath="/buffs/buff[@name='buffInjuryConcussion']/effect_group/triggered_effect [@trigger='onSelfBuffStart']/@value">1800</set>
+	<set xpath="/buffs/buff[@name='buffInjuryConcussion']/effect_group/triggered_effect [@trigger='onSelfBuffStack']/@value">1800</set>
+</configs>
