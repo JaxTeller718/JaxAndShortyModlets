@@ -29,7 +29,7 @@
 			<property name="ImposterExchange" value="imposterBlock" param1="115"/>
 			<property name="Path" value="solid"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
-			<property name="LootList" value="409"/>
+			<property name="LootList" value="largeArmoredStorage"/>
 			<property name="DowngradeBlock" value="cntHardenedChestInsecureJT"/>
 			<property class="RepairItems">
 				<property name="resourceForgedIron" value="60"/>
@@ -55,7 +55,7 @@
 			<property name="ImposterExchange" value="imposterBlock" param1="115"/>
 			<property name="Path" value="solid"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="409"/>
+			<property name="LootList" value="largeArmoredStorage"/>
 			<property class="RepairItems">
 				<property name="resourceForgedIron" value="60"/>
 			</property>
@@ -133,7 +133,7 @@
 			<property name="Collide" value="sight,movement,melee,bullet,arrow,rocket"/>
 			<property name="IsTerrainDecoration" value="true"/>
 			<property name="Place" value="TowardsPlacerInverted"/>
-			<property name="LootList" value="7"/>
+			<property name="LootList" value="gunSafe"/>
 			<property name="DowngradeBlock" value="cntGunSafeInsecure"/>
 			<property name="LockPickItem" value="resourceLockPick"/>
 			<property name="LockPickTime" value="20"/>
@@ -224,7 +224,7 @@
 			<property name="DescriptionKey" value="cntStorageGenericSignedJTDesc"/>
 			<property name="Tags" value="door"/>
 			<property name="Class" value="SecureLootSigned"/>
-			<property name="LootList" value="5"/>
+			<property name="LootList" value="largeStorageBox"/>
 			<property name="Material" value="MwoodReinforced"/>
 			<property name="MaxDamage" value="400"/>
 			<property name="Texture" value="572"/>
@@ -246,7 +246,7 @@
 			<property name="CustomIcon" value="cntShippingCrateHero"/>
 			<property name="DescriptionKey" value="cntStorageGenericSignedJTDesc"/>
 			<property name="Class" value="Loot"/>
-			<property name="LootList" value="5"/>
+			<property name="LootList" value="largeStorageBox"/>
 			<property name="Material" value="MwoodReinforced"/>
 			<property name="MaxDamage" value="400"/>
 			<property name="Shape" value="ModelEntity"/>

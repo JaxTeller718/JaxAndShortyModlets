@@ -44,7 +44,7 @@
 	        <effect_group tiered="false">
 		        <requirement name="NotHasBuff" buff="buffIsOnFire"/>
 
-		        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
+		        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="5"/>
 		        <display_value name="dStaminaRegen" value=".10"/>
 		        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 		        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffIllDysentery0">
@@ -82,8 +82,8 @@
 	        <effect_group tiered="false">
 		        <requirement name="NotHasBuff" buff="buffIsOnFire"/>
 
-		        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="20"/>
-		        <display_value name="dStaminaRegen" value=".15"/>
+		        <triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="10"/>
+		        <display_value name="dStaminaRegen" value=".1"/>
 		        <triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
 	        </effect_group>
 

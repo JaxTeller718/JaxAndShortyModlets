@@ -17,5 +17,12 @@
 			<ingredient name="resourceFiberCordageJT" count="1"/>
 		</recipe>
 
+		<recipe name="resourceWoodNailJT" count="4" craft_time="1" craft_area="tableSawJT">
+			<ingredient name="resourceWood" count="1"/>
+		</recipe>
+		
+		<recipe name="resourceStickJT" count="4" craft_time="1" craft_area="tableSawJT">
+			<ingredient name="resourceWood" count="1"/>
+		</recipe>
 	</append>
 </JaxTeller718>
