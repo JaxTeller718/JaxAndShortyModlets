@@ -1,0 +1,13 @@
+<configs>
+	<append xpath="/recipes">
+		<recipe name="resource13erserkCleanCloth" count="1">
+			<ingredient name="resourceCropCottonPlant" count="3"/>
+		</recipe>
+		<recipe name="13erserkSprainsAndStrainsKit" count="1" craft_time="25" tags="learnable">
+			<ingredient name="medicalBandage" count="1"/>
+			<ingredient name="resourceSnowBall" count="3"/>
+			<ingredient name="resourceDuctTape" count="1"/>
+			<ingredient name="resource13erserkCleanCloth" count="1"/>
+		</recipe>
+	</append>
+</configs>

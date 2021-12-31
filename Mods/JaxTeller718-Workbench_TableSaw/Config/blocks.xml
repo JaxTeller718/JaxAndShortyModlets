@@ -43,7 +43,7 @@
 	<drop event="Harvest" name="resourceForgedIron" count="10" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceSpring" count="2" tag="salvageHarvest"/>
 	<drop event="Harvest" name="resourceMechanicalParts" count="4" tag="salvageHarvest"/>
-	<drop event="Destroy" name="tableSawBladeRJT" count="1"/>
+	<drop event="Destroy" name="tableSawBladeJT" count="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="DescriptionKey" value="tableSawJTDesc"/>

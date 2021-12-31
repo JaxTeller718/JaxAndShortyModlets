@@ -1,0 +1,7 @@
+Key,Source,Context,Changes,English
+
+13erserkSprainsAndStrainsKitSchematic,items,item,New,"Sprains And Strains Kit Schematic"
+resource13erserkCleanCloth,items,item,New,Clean Cloth
+resource13erserkCleanClothDesc,items,item,New,"Clean cloth is a staple for survival used for clothing, bandages and more."
+13erserkSprainsAndStrainsKit,items,item,New,"Sprains And Strains Kit"
+13erserkSprainsAndStrainsKitDesc,items,item,New,"Hand made ice bag made in such a way so you can tie it up around the sprained part so you don't have to stop and hold it in place. The bandage holds firmly and extends well beyond the injury."

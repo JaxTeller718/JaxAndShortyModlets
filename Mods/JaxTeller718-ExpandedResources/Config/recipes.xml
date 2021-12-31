@@ -79,6 +79,7 @@
 	<setattribute xpath="/recipes/recipe[@name='apparelPlantFiberShirt']" name="craft_time">4</setattribute>
 	<setattribute xpath="/recipes/recipe[@name='apparelPlantFiberShoes']" name="craft_time">4</setattribute>
 	<setattribute xpath="/recipes/recipe[@name='frameShapes:VariantHelper']" name="craft_time">2</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='woodShapes:VariantHelper']" name="craft_time">2</setattribute>
 	
 	
 	<insertAfter xpath="/recipes/recipe[@name='bedrollBlockVariantHelper']/ingredient[@name='resourceYuccaFibers']">

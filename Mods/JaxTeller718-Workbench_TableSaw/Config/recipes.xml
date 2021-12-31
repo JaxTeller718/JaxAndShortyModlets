@@ -24,5 +24,16 @@
 		<recipe name="resourceStickJT" count="4" craft_time="1" craft_area="tableSawJT">
 			<ingredient name="resourceWood" count="1"/>
 		</recipe>
+		
+		<recipe name="frameShapes:VariantHelper" count="2" craft_time="2" craft_area="tableSawJT">
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceWoodNailJT" count="2"/>
+		</recipe>
+
+		<recipe name="woodShapes:VariantHelper" count="2" craft_time="2" craft_area="tableSawJT">
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="resourceWoodNailJT" count="2"/>
+		</recipe>
+
 	</append>
 </JaxTeller718>

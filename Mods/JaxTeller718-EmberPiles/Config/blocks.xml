@@ -1,0 +1,5 @@
+<JaxTeller718>
+	<insertAfter xpath="/blocks/block[@name='emberPileDeco3']/property[@name='Mesh']">
+		<property name="BuffsWhenWalkedOn" value="buffBurningEnvironment"/>
+	</insertAfter>
+</JaxTeller718>
