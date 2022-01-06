@@ -27,7 +27,6 @@
 		<item name="foodBaconEggSandwichSchematic"/>
 		<item name="foodFishPieSchematic"/>
 		<item name="foodGrillSteakSchematic"/>
-		<item name="foodEggBaconSandwichSchematic"/>	
 	</append>
 	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT2']">
 		<item name="foodMashedPotatoSchematic"/>
@@ -62,10 +61,7 @@
 
 
 	<append xpath="/lootcontainers/lootgroup[@name='groupFoodTrash']">
-		<item name="drinkMilk" count="2,4" loot_prob_template="med"/>
 		<item name="foodRamenNoodles" loot_prob_template="low"/>
-		<item name="foodButterJT" count="2,4" loot_prob_template="low"/>
-		<item name="foodMayonnaise" count="2,4" loot_prob_template="medLow"/>
 		<item name="foodBagOfHotChips" loot_prob_template="low"/>
 		<item name="foodBagOfChips" loot_prob_template="low"/>
 		<item name="foodCandyBar" loot_prob_template="low"/>

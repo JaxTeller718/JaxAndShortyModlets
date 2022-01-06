@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <configs>
 	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='1,5']/@tags">,foodYuccaChips,foodHashbrown,foodCornChips,foodFriedEgg,foodBiscuit,foodBiscuitWithJam,foodTunaSandwichJT,foodBaconMacCheese,resourceDough,foodBread,foodOmelet</append>
-	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='2,5']/@tags">,drinkBerryTea,drinkIcedMixedTea,foodGrillPork,foodGrillChicken,drinkIcedCoffee,foodFriedMeat,foodFriedMushrooms,foodFrenchToast,foodCustardPie,foodRamenSoup,foodSoupMushroom,foodHamCheese,foodSteakSandwich,foodRawPasta</append>
-	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='3,5']/@tags">,foodCornGrits,foodBlueberryJam,foodYuccaJam,foodEggSalad,foodBaconEggSandwich,foodFishPie,foodGrillSteak,foodMeatballSub,foodBakedPotatoSandwich,foodPorkCreamCheeseSandwich,foodBaguette,foodBagel</append>
-	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='4,5']/@tags">,foodMashedPotato,foodCoffeeCake,foodMushroomPie,foodMeatAndBeerPie,foodHamburger,foodHoneyHam,foodGrillSteakSandwich,foodTunaBLTSandwich,foodChickenBaconSandwich,foodDeulxeHamCheeseSandwich,foodEggBaconSandwich</append>
-	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='5,5']/@tags">,foodPatsSteak,foodSalmonCreamCheeseSandwich</append>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='2,5']/@tags">,drinkBerryTea,drinkIcedMixedTea,foodGrillPork,foodGrillChicken,drinkIcedCoffee,foodFriedMeat,foodFriedMushrooms,foodFrenchToast,foodCustardPie,foodRamenSoup,foodSoupMushroom,foodRawPasta</append>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='3,5']/@tags">,foodCornGrits,foodBlueberryJam,foodYuccaJam,foodEggSalad,foodBaconEggSandwich,foodFishPie,foodGrillSteak,foodMeatballSub,foodBakedPotatoSandwich</append>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='4,5']/@tags">,foodMashedPotato,foodCoffeeCake,foodMushroomPie,foodMeatAndBeerPie,foodHoneyHam</append>
+	<append xpath="/progression/perks/perk[@name='perkMasterChef']/effect_group/passive_effect[@level='5,5']/@tags">,foodHamburger,foodGrillSteakSandwich,foodTunaBLTSandwich,foodChickenBaconSandwich,foodDeulxeHamCheeseSandwich</append>
 </configs>

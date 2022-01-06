@@ -34,12 +34,7 @@
 	<ingredient name="drinkJarBoiledWater" count="1"/>
 </recipe>
 
-<recipe name="foodBushcraftBaconEggGrits" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
-	<ingredient name="foodRawMeat" count="5"/>
-	<ingredient name="foodEgg" count="2"/>
-	<ingredient name="foodCornMeal" count="1"/>	
-	<ingredient name="drinkJarBoiledWater" count="1"/>
-</recipe>
+
 
 <recipe name="foodBushcraftSuperCornOnTheCob" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 	<ingredient name="foodCropGraceCorn" count="1"/>

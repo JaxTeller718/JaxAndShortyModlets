@@ -123,10 +123,7 @@
 			<ingredient name="foodRawMeat" count="5"/>
 			<ingredient name="foodBread" count="2"/>
 		</recipe>
-		<recipe name="foodBaconEggSandwich" count="1" craft_time="15" craft_area="campfire" tags="perkMasterChef,learnable" craft_tool="toolCookingGrill">
-			<ingredient name="foodBaconAndEggs" count="2"/>
-			<ingredient name="foodBread" count="2"/>
-		</recipe>
+
 		<recipe name="foodFishPie" count="1" craft_time="20" craft_area="campfire" tags="perkMasterChef,learnable" craft_tool="toolCookingPot">
 			<ingredient name="foodEgg" count="1"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
@@ -148,6 +145,8 @@
 		<recipe name="foodGrillSteakSandwich" count="1" craft_time="15" craft_area="campfire" tags="perkMasterChef,learnable" craft_tool="toolCookingGrill">
 			<ingredient name="foodGrillSteak" count="1"/>
 			<ingredient name="foodBread" count="2"/>
+			<ingredient name="foodButterJT" count="1"/>
+			<ingredient name="foodCheese" count="1"/>
 		</recipe>
 		<recipe name="foodBiscuit" count="1" craft_time="10" craft_area="campfire" tags="perkMasterChef,learnable" craft_tool="toolCookingPot">
 			<ingredient name="foodCornMeal" count="3"/>
@@ -164,10 +163,12 @@
 		<recipe name="foodRamenSoup" count="1" craft_time="30" craft_area="microwaveJT" tags="perkMasterChef,learnable">
 			<ingredient name="foodRamenNoodles" count="1"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="drinkBowlEmptyJT" count="1"/>
 		</recipe>
 		<recipe name="foodSoupMushroom" count="1" craft_time="50" craft_area="microwaveJT" tags="perkMasterChef,learnable">
 			<ingredient name="foodCropMushrooms" count="5"/>
 			<ingredient name="drinkJarBoiledWater" count="2"/>
+			<ingredient name="drinkBowlEmptyJT" count="1"/>
 		</recipe>
 		<recipe name="foodMysteryMeatCrafted" count="1" craft_time="15" craft_area="campfire" tags="learnable" craft_tool="toolCookingGrill">
 			<ingredient name="foodRottingFlesh" count="5"/>
@@ -202,12 +203,6 @@
 			<ingredient name="foodEgg" count="2"/>
 			<ingredient name="resourceAnimalFat" count="2"/>
 		</recipe>
-		<recipe name="foodHamCheese" count="1" craft_time="30" craft_area="campfire" tags="learnable" craft_tool="toolCookingGrill">
-			<ingredient name="foodBread" count="2"/>
-			<ingredient name="foodCheese" count="1"/>
-			<ingredient name="foodRawMeat" count="1"/>
-			<ingredient name="foodMayonnaise" count="1"/>
-		</recipe>
 
 		<recipe name="foodBaconMacCheese" count="1" craft_time="30" craft_area="campfire" craft_tool="toolCookingGrill" tags="learnable">
 			<ingredient name="foodFriedBacon" count="1"/>
@@ -226,6 +221,7 @@
 			<ingredient name="foodButterJT" count="1"/>
 			<ingredient name="foodCheese" count="1"/>
 			<ingredient name="foodHoneyGlazedHam" count="1"/>
+			<ingredient name="foodMayonnaise" count="1"/>
 		</recipe>
 		<recipe name="foodChickenBaconSandwich" count="1" craft_time="30" craft_area="campfire" tags="learnable" craft_tool="toolCookingGrill">
 			<ingredient name="foodBread" count="2"/>
@@ -233,39 +229,20 @@
 			<ingredient name="foodMayonnaise" count="1"/>
 			<ingredient name="foodGrillChicken" count="1"/>
 		</recipe>
-		<recipe name="foodSalmonCreamCheeseSandwich" count="1" craft_time="30" craft_area="campfire" tags="learnable" craft_tool="toolCookingGrill">
-			<ingredient name="foodButterJT" count="1"/>
-			<ingredient name="foodCanSalmon" count="2"/>
-			<ingredient name="foodBaguette" count="1"/>
-			<ingredient name="foodCreamCheese" count="2"/>
-		</recipe>
-		<recipe name="foodEggBaconSandwich" count="1" craft_time="30" craft_area="campfire" tags="learnable" craft_tool="toolCookingGrill">
-			<ingredient name="foodFriedBacon" count="2"/>
-			<ingredient name="foodMayonnaise" count="1"/>
-			<ingredient name="foodBaguette" count="1"/>
-			<ingredient name="foodEggBoiled" count="2"/>
-		</recipe>
-		<recipe name="foodSteakSandwich" count="1" craft_time="30" craft_area="campfire" tags="learnable" craft_tool="toolCookingGrill">
-			<ingredient name="foodBaguette" count="1"/>
-			<ingredient name="foodGrillSteak" count="1"/>
-			<ingredient name="foodButterJT" count="1"/>
-		</recipe>
-		<recipe name="foodPatsSteak" count="1" craft_time="30" craft_area="campfire" tags="learnable" craft_tool="toolCookingGrill">
-			<ingredient name="foodCheese" count="1"/>
+
+		
+		<recipe name="foodBaconEggSandwich" count="1" craft_time="15" craft_area="campfire" tags="perkMasterChef,learnable" craft_tool="toolCookingGrill">
+			<ingredient name="foodBaconAndEggs" count="2"/>
 			<ingredient name="foodBread" count="2"/>
-			<ingredient name="foodGrillSteak" count="1"/>
+			<ingredient name="foodMayonnaise" count="1"/>
 		</recipe>
+
 		<recipe name="foodBakedPotatoSandwich" count="1" craft_time="30" craft_area="campfire" tags="learnable" craft_tool="toolCookingGrill">
 			<ingredient name="foodBread" count="2"/>
 			<ingredient name="foodBakedPotato" count="3"/>
 			<ingredient name="foodMayonnaise" count="1"/>
 		</recipe>
-		<recipe name="foodPorkCreamCheeseSandwich" count="1" craft_time="30" craft_area="campfire" tags="learnable" craft_tool="toolCookingGrill">
-			<ingredient name="foodBaguette" count="1"/>
-			<ingredient name="foodButterJT" count="1"/>
-			<ingredient name="foodCreamCheese" count="2"/>
-			<ingredient name="foodGrillPork" count="2"/>
-		</recipe>
+
 		<recipe name="foodBrisket" count="1" craft_time="130" craft_area="campfire" tags="learnable">
 			<ingredient name="foodRawMeat" count="10"/>
 			<ingredient name="foodSaltJT" count="1"/>
@@ -286,7 +263,7 @@
 		<recipe name="foodFriedBacon" count="5" craft_area="campfire" craft_tool="toolCookingGrill">
 			<ingredient name="foodRawMeat" count="5"/>
 		</recipe>
-		<recipe name="resourceDough" count="1" craft_time="15" craft_area="campfire" tags="learnable">
+		<recipe name="resourceDough" count="3" craft_time="15" craft_area="campfire" tags="learnable">
 			<ingredient name="foodFlourJT" count="3"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodEgg" count="1"/>
@@ -296,25 +273,12 @@
 			<ingredient name="resourceDough" count="1"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 		</recipe>
-		<recipe name="foodCream" count="1" craft_time="15" craft_area="campfire">
-			<ingredient name="drinkMilk" count="5"/>
-		</recipe>
+
 		<recipe name="foodCheese" count="1" craft_time="60" craft_area="campfire">
 			<ingredient name="drinkMilk" count="3"/>
 			<ingredient name="foodSaltJT" count="5"/>
 		</recipe>
-		<recipe name="foodCreamCheese" count="1" craft_time="15" craft_area="campfire">
-			<ingredient name="foodCream" count="1"/>
-			<ingredient name="foodCheese" count="1"/>
-		</recipe>
-		<recipe name="foodBagel" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
-			<ingredient name="resourceDough" count="1"/>
-			<ingredient name="drinkJarBoiledWater" count="1"/>
-		</recipe>
-		<recipe name="foodBaguette" count="1" craft_time="60" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable">
-			<ingredient name="resourceDough" count="1"/>
-			<ingredient name="drinkJarBoiledWater" count="1"/>
-		</recipe>
+
 		<recipe name="foodBread" count="1" craft_time="60" craft_area="campfire" tags="learnable">
 			<ingredient name="resourceDough" count="1"/>
 			<ingredient name="foodButterJT" count="1"/>
