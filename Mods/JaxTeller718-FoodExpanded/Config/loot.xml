@@ -3,7 +3,6 @@
 	<!-- DOUGH: Used new Loot Groups for tiering. Used Progression.xml for hints on item goodness -->
 	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT0']">
 		<item name="drinkBerryTeaSchematic"/>
-		<item name="drinkIcedMixedTeaSchematic"/>
 		<item name="drinkIcedCoffeeSchematic"/>
 		<item name="foodYuccaChipsSchematic"/>
 		<item name="foodHashbrownSchematic"/>
@@ -20,7 +19,6 @@
 		<item name="foodTunaSandwichJTSchematic"/>
 	</append>
 	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT1']">
-		<item name="foodCornGritsSchematic"/>
 		<item name="foodBlueberryJamSchematic"/>
 		<item name="foodYuccaJamSchematic"/>
 		<item name="foodEggSaladSchematic"/>

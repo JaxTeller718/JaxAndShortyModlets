@@ -88,9 +88,6 @@ drinkBerryTea,items,Food,New,Berry Tea
 drinkBerryTeaDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
 drinkBerryTeaSchematic,items,Food,New,Berry Tea Recipe
 
-drinkIcedMixedTea,items,Food,New,Iced Mixed tea
-drinkIcedMixedTeaDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
-drinkIcedMixedTeaSchematic,items,Food,New,Iced Mixed tea Recipe
 
 drinkIcedCoffee,items,Food,New,Iced Coffee
 drinkIcedCoffeeDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
@@ -108,9 +105,6 @@ foodMashedPotato,items,Food,New,Mashed Potato
 foodMashedPotatoDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
 foodMashedPotatoSchematic,items,Food,New,Mashed Potato Recipe
 
-foodCornGrits,items,Food,New,Corn Grits
-foodCornGritsDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
-foodCornGritsSchematic,items,Food,New,Corn Grits Recipe
 
 foodBlueberryJam,items,Food,New,Blueberry Jam
 foodBlueberryJamDesc,items,Food,New,Cooking in the Apocalypse is extremely important to survival.
@@ -267,13 +261,6 @@ foodTunaSandwichJT,items,Food,New,Tuna Sandwich
 foodTunaSandwichJTDesc,items,Food,New,Not the best sandwich but eatable.
 foodTunaSandwichJTSchematic,items,Food,New,Tuna Sandwich Recipe
 
-foodMysteryMeat,items,Food,New,Mystery Meat
-foodMysteryMeatDesc,items,Food,New,It doesn't smell terrible but you don't know how much faith you should put in Hotrod.
-foodMysteryMeatSchematic,items,Food,New,Mystery Meat Recipe
-
-foodMysteryMeatCrafted,items,Food,New,Mystery Meat
-foodMysteryMeatCraftedDesc,items,Food,New,It doesn't smell terrible but you don't know how much faith you should put in Hotrod.
-foodMysteryMeatCraftedSchematic,items,Food,New,Mystery Meat Recipe
 
 foodCandyBar,items,Food,New,Candy Bar
 foodCandyBarDesc,items,Food,New,Diabeetus what diabeetus. This is the apocalypse so have at it and shove that candy in your mouth like there is no tomorrow!
@@ -320,11 +307,9 @@ foodSoupMushroomSchematic,items,Book,New,Mushroom Soup Schematic,,,,,
 
 foodVinegar,items,Food,New,Vinegar,,,,,
 foodMayonnaise,items,Food,New,Mayonnaise,,,,,
-foodBrisket,items,Food,New,Brisket,,,,,
 foodPulledPorkSandwich,items,Food,New,Pulled Pork Sandwich,,,,,
 foodPulledPorkSandwichDesc,items,Food,New,Never eat something this good on a Blood Moon.,,,,,
 foodPulledPork,items,Food,New,Pulled Pork,,,,,
-foodBeerCanChicken,items,Food,New,Beer Can Chicken,,,,,
 foodSushi,items,Food,New,Sushi,,,,,
 foodPickles,items,Food,New,Pickles,,,,,
 foodColeSlaw,items,Food,New,Cole Slaw,,,,,
@@ -340,7 +325,6 @@ foodChickenBaconSandwich,items,Food,New,Chicken and Bacon Sandwich,,,,,
 foodSalmonCreamCheeseSandwich,items,Food,New,Salmon and Cream Cheese Sandwich,,,,,
 foodEggBaconSandwich,items,Food,New,Bacon Egg On A Hero,,,,,
 foodSteakSandwich,items,Food,New,Steak Sandwich,,,,,
-foodBakedPotatoSandwich,items,Food,New,Baked Potato Sandwich,,,,,
 foodDeluxeFishSandwich,items,Food,New,Fish Deluxe,,,,,
 foodPorkCreamCheeseSandwich,items,Food,New,Pork and Cream Cheese Sandwich,,,,,
 foodShadesDanishFishDish,items,Food,New,Shades Danish Fish Dish,,,,,
@@ -414,9 +398,7 @@ foodGrilledMushroomsDesc,items,Food,New,Grilling your vegetables is a great way 
 foodGrilledPotatoDesc,items,Food,New,Grilling your vegetables is a great way to make a quick nutritious snack.,,,,,
 foodVinegarDesc,items,Food,New,Vinegar is a very common ingredient for many recipes.,,,,,
 foodMayonnaiseDesc,items,Food,New,Mayonnaise can be used to add the perfect finishing touch on sandwiches.,,,,,
-foodBrisketDesc,items,Food,New,Smoking meats provides massive benefits to you mentally and physically. Take it back to the days before the apocalypse and when cookouts were your weekend getaway.,,,,,
 foodPulledPorkDesc,items,Food,New,Smoking meats provides massive benefits to you mentally and physically. Take it back to the days before the apocalypse and when cookouts were your weekend getaway.,,,,,
-foodBeerCanChickenDesc,items,Food,New,Smoking meats provides massive benefits to you mentally and physically. Take it back to the days before the apocalypse and when cookouts were your weekend getaway.,,,,,
 foodTrailMixJT,items,Food,New,Survival Mix,,,,,
 foodTrailMixJTDesc,items,Food,New,Survival Mix is a great survival food that can be easily made and provides you with a nutritious snack.,,,,,
 foodJerkyJT,items,Food,New,Dried Jerky,,,,,

@@ -75,56 +75,9 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 		</item>
-		<item name="drinkIcedMixedTea">
-			<property name="HoldType" value="3"/>
-			<property name="DescriptionKey" value="ATMixedTeaDesc"/>
-			<property name="CustomIcon" value="ATMixedTea"/>
-			<property name="DisplayType" value="ATIceDrinkDisplay"/>
-			<property name="Meshfile" value="#Other/Items?Food/bottled_waterPrefab.prefab"/>
-			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Mglass"/>
-			<property name="Weight" value="10"/>
-			<property name="Stacknumber" value="10"/>
-			<!-- STK drink -->
-			<property name="EconomicValue" value="65"/>
-			<property name="UnlockedBy" value="perkMasterChef,drinkIcedMixedTeaSchematic"/>
-			<property class="Action0">
-				<property name="Class" value="Eat"/>
-				<property name="Delay" value="1.0"/>
-				<property name="Use_time" value="..."/>
-				<property name="Sound_start" value="player_drinking"/>
-				<property name="Create_item" value="drinkJarEmpty"/>
-			</property>
-			<property name="Group" value="Food/Cooking,CFDrink/Cooking"/>
-			<effect_group tiered="false">
-				<requirement name="NotHasBuff" buff="buffIsOnFire"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="40"/>
-				<display_value name="dHyperthermalResist" value="30"/>
-				<display_value name="dDuration" value="180"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffColdDrinkDuration" operation="add" value="203"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$ATbuffColdDrinkDuration" operation="set" value="903">
-					<requirement name="CVarCompare" cvar="$ATbuffColdDrinkDuration" operation="GT" value="903"/>
-				</triggered_effect>
-				<display_value name="dStaminaRegen" value=".15"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables,ATbuffColdDrink"/>
-			</effect_group>
-			<effect_group tiered="false">
-				<requirement name="HasBuff" buff="buffIsOnFire"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffExtinguishFire"/>
-			</effect_group>
-		</item>
+
 		<!--===Item Recipe==-->
-		<item name="drinkIcedMixedTeaSchematic">
-			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
-			<property name="EconomicValue" value="200"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="ATMixedTea"/>
-			<property name="Unlocks" value="drinkIcedMixedTea"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="drinkIcedMixedTea" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
+
 		<item name="drinkIcedCoffee">
 			<property name="HoldType" value="3"/>
 			<property name="DescriptionKey" value="ATIcedCoffeeDesc"/>
@@ -290,44 +243,9 @@
 				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
 			</effect_group>
 		</item>
-		<item name="foodCornGrits">
-			<property name="HoldType" value="31"/>
-			<property name="DescriptionKey" value="ATCornGritsDesc"/>
-			<property name="CustomIcon" value="ATCornGrits"/>
-			<property name="DisplayType" value="food"/>
-			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
-			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Morganic"/>
-			<property name="Stacknumber" value="50"/>
-			<!-- STK food -->
-			<property name="EconomicValue" value="16"/>
-			<property name="UnlockedBy" value="perkMasterChef,foodCornGritsSchematic"/>
-			<property name="EconomicBundleSize" value="1"/>
-			<property class="Action0">
-				<property name="Class" value="Eat"/>
-				<property name="Delay" value="1.0"/>
-				<property name="Use_time" value="..."/>
-				<property name="Sound_start" value="player_eating"/>
-			</property>
-			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="15"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="5"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
-			</effect_group>
-		</item>
+
 		<!--===Item Recipe==-->
-		<item name="foodCornGritsSchematic">
-			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
-			<property name="EconomicValue" value="250"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="ATCornGrits"/>
-			<property name="Unlocks" value="foodCornGrits"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodCornGrits" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
+
 		<item name="foodBlueberryJam">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="ATBlueberryJamDesc"/>
@@ -1371,47 +1289,7 @@
 				</triggered_effect>
 			</effect_group>
 		</item>
-		<item name="foodMysteryMeatCrafted">
-			<property name="HoldType" value="31"/>
-			<property name="DescriptionKey" value="foodMysteryMeatDesc"/>
-			<property name="CustomIcon" value="foodMysteryMeat"/>
-			<property name="DisplayType" value="foodWaterMystery"/>
-			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
-			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-			<property name="Material" value="Morganic"/>
-			<property name="Stacknumber" value="10"/>
-			<property name="EconomicValue" value="12"/>
-			<property name="UnlockedBy" value="foodMysteryMeatCraftedSchematic"/>
-			<property name="EconomicBundleSize" value="2"/>
-			<property name="SellableToTrader" value="false"/>
-			<property class="Action0">
-				<property name="Class" value="Eat"/>
-				<property name="Delay" value="1.0"/>
-				<property name="Use_time" value="..."/>
-				<property name="Sound_start" value="player_eating"/>
-			</property>
-			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="20"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="-5"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-5"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="Health" operation="add" value="-4"/>
-				<display_value name="foodHealthAmount" value="-4"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="-12"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
-			</effect_group>
-		</item>
-		<item name="foodMysteryMeatCraftedSchematic">
-			<property name="Extends" value="schematicNoQualityRecipeMaster"/>
-			<property name="EconomicValue" value="200"/>
-			<property name="CreativeMode" value="Player"/>
-			<property name="CustomIcon" value="foodMysteryMeat"/>
-			<property name="Unlocks" value="foodMysteryMeatCrafted"/>
-			<effect_group tiered="false">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodMysteryMeatCrafted" operation="set" value="1"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="GiveExp" exp="50"/>
-			</effect_group>
-		</item>
+
 		<item name="foodCandyBar">
 			<property name="HoldType" value="31"/>
 			<property name="DescriptionKey" value="foodCandyBarDesc"/>
@@ -1631,44 +1509,7 @@
 			<property name="CraftingIngredientTime" value="1"/>
 			<property name="SellableToTrader" value="false"/>
 		</item>
-		<item name="foodBrisket">
-			<property name="HoldType" value="31"/>
-			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
-			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-			<property name="DisplayType" value="foodWater"/>
-			<property name="CustomIcon" value="brisket"/>
-			<property name="Material" value="Morganic"/>
-			<property name="DescriptionKey" value="foodBrisketDesc"/>
-			<property name="Weight" value="1"/>
-			<property name="Stacknumber" value="100"/>
-			<property name="EconomicValue" value="2"/>
-			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-			<property name="CraftingIngredientExp" value="3"/>
-			<property name="CraftingIngredientTime" value="1"/>
-			<property class="Action0">
-				<property name="Class" value="Eat"/>
-				<property name="Delay" value="1.0"/>
-				<property name="Use_time" value="..."/>
-				<property name="Sound_start" value="player_eating"/>
-			</property>
-			<property class="Action1">
-				<property name="Class" value="ThrowAway"/>
-				<property name="Delay" value="1.2"/>
-				<property name="Throw_strength_default" value="10"/>
-				<property name="Throw_strength_max" value="35"/>
-				<property name="Max_strain_time" value="1"/>
-				<property name="Sound_start" value="swoosh"/>
-			</property>
-			<effect_group tiered="false" name="Food Tier 0/1">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="85"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-32"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="10"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="15"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-				<display_value name="$waterAmountAdd" value="-32"/>
-			</effect_group>
-			<property name="SellableToTrader" value="false"/>
-		</item>
+
 		<item name="foodPulledPork">
 			<property name="HoldType" value="31"/>
 			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
@@ -1707,43 +1548,7 @@
 			</effect_group>
 			<property name="SellableToTrader" value="false"/>
 		</item>
-		<item name="foodBeerCanChicken">
-			<property name="HoldType" value="31"/>
-			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
-			<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
-			<property name="DisplayType" value="foodWater"/>
-			<property name="CustomIcon" value="foodBeerCanChicken"/>
-			<property name="Material" value="Morganic"/>
-			<property name="Weight" value="1"/>
-			<property name="Stacknumber" value="100"/>
-			<property name="EconomicValue" value="2"/>
-			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-			<property name="CraftingIngredientExp" value="3"/>
-			<property name="CraftingIngredientTime" value="1"/>
-			<property class="Action0">
-				<property name="Class" value="Eat"/>
-				<property name="Delay" value="1.0"/>
-				<property name="Use_time" value="..."/>
-				<property name="Sound_start" value="player_eating"/>
-			</property>
-			<property class="Action1">
-				<property name="Class" value="ThrowAway"/>
-				<property name="Delay" value="1.2"/>
-				<property name="Throw_strength_default" value="10"/>
-				<property name="Throw_strength_max" value="35"/>
-				<property name="Max_strain_time" value="1"/>
-				<property name="Sound_start" value="swoosh"/>
-			</property>
-			<effect_group tiered="false" name="Food Tier 0/1">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="58"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-14"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="55"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="14"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-				<display_value name="$waterAmountAdd" value="-7"/>
-			</effect_group>
-			<property name="SellableToTrader" value="false"/>
-		</item>
+
 		<item name="foodTunaBLTSandwich">
 			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
 			<property name="Material" value="Morganic"/>
@@ -1849,32 +1654,6 @@
 		</item>
 
 
-
-		<item name="foodBakedPotatoSandwich">
-			<property name="Meshfile" value="#Other/Items?Misc/parcelPrefab.prefab"/>
-			<property name="Material" value="Morganic"/>
-			<property name="HoldType" value="31"/>
-			<property name="DisplayType" value="foodWater"/>
-			<property name="Stacknumber" value="100"/>
-			<property name="UnlockedBy" value="perkMasterChef"/>
-			<property class="Action0">
-				<property name="Class" value="Eat"/>
-				<property name="Delay" value="1.0"/>
-				<property name="Use_time" value="..."/>
-				<property name="Sound_start" value="player_eating"/>
-			</property>
-			<effect_group tiered="false" name="Food Tier 0/1">
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="35"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyStats" stat="water" operation="add" value="-15"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="20"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar=".foodStaminaBonusAdd" operation="add" value="10"/>
-				<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" buff="buffProcessConsumables"/>
-				<display_value name="$waterAmountAdd" value="-15"/>
-			</effect_group>
-			<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
-			<property name="DescriptionKey" value="specialtySandwichDesc"/>
-			<property name="SellableToTrader" value="false"/>
-		</item>
 
 
 		<item name="foodBaconMacCheese">

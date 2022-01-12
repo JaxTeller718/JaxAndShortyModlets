@@ -1,25 +1,33 @@
 <configs>
 	<remove xpath="/recipes/recipe[@name='foodSteakAndPotato']"/>
+	<remove xpath="/recipes/recipe[@name='foodBaconAndEggs']"/>
+	
+<!-- 	<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodRawMeat']/@name">foodFriedBacon</set>
+	<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodEgg']/@name">foodFriedEgg</set>
+	<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodFriedBacon']/@count">1</set>
+	<set xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodFriedEgg']/@count">1</set>
+
+	<insertAfter xpath="/recipes/recipe[@name='foodBaconAndEggs']/ingredient[@name='foodFriedEgg']">
+			<ingredient name="drinkBowlEmptyJT" count="1"/>
+	</insertAfter> -->
+	
 	<append xpath="/recipes">
+		<recipe name="foodBaconAndEggs" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
+			<ingredient name="foodFriedBacon" count="1"/>
+			<ingredient name="foodFriedEgg" count="1"/>
+			<ingredient name="drinkBowlEmptyJT" count="1"/>
+		</recipe>
 		<recipe name="foodSteakAndPotato" count="1" craft_area="campfire" craft_tool="toolCookingGrill" tags="perkMasterChef,learnable">
-			<ingredient name="foodRawMeat" count="10"/>
+			<ingredient name="foodGrillSteak" count="1"/>
 			<ingredient name="foodCropPotato" count="2"/>
 			<ingredient name="foodCropMushrooms" count="5"/>
 			<ingredient name="resourceAnimalFat" count="5"/>
-			<effect_group>
-				<passive_effect name="CraftingIngredientCount" level="4,5" operation="base_add" value="-1" tags="foodRawMeat"/>
-			</effect_group>
 		</recipe>
 		<recipe name="drinkBerryTea" count="1" craft_time="20" craft_area="coffeemakerJT" tags="learnable,perkMasterChef">
 			<ingredient name="foodCropBlueberries" count="1"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 		</recipe>
-		<recipe name="drinkIcedMixedTea" count="1" craft_time="20" craft_area="coffeemakerJT" tags="learnable,perkMasterChef">
-			<ingredient name="resourceCropChrysanthemumPlant" count="1"/>
-			<ingredient name="resourceCropGoldenrodPlant" count="1"/>
-			<ingredient name="resourceSnowBall" count="1"/>
-			<ingredient name="drinkJarEmpty" count="1"/>
-		</recipe>
+
 		<recipe name="drinkIcedCoffee" count="1" craft_time="20" craft_area="coffeemakerJT" tags="learnable,perkMasterChef">
 			<ingredient name="resourceCropCoffeeBeans" count="1"/>
 			<ingredient name="resourceSnowBall" count="1"/>
@@ -37,11 +45,7 @@
 			<ingredient name="foodCropPotato" count="5"/>
 			<ingredient name="foodButterJT" count="1"/>
 		</recipe>
-		<recipe name="foodCornGrits" count="1" craft_time="25" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
-			<ingredient name="drinkJarBoiledWater" count="1"/>
-			<ingredient name="foodButterJT" count="1"/>
-			<ingredient name="foodCornMeal" count="1"/>
-		</recipe>
+
 		<recipe name="foodBlueberryJam" count="1" craft_time="22" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodCropBlueberries" count="5"/>
@@ -53,18 +57,14 @@
 		<recipe name="foodEggSalad" count="1" craft_time="35" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
 			<ingredient name="foodEggBoiled" count="2"/>
 			<ingredient name="foodCropPotato" count="1"/>
-			<ingredient name="foodButterJT" count="1"/>
+			<ingredient name="foodMayonnaise" count="1"/>
 		</recipe>
 		<recipe name="foodFriedMeat" count="1" craft_time="18" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingGrill">
 			<ingredient name="foodRawMeat" count="5"/>
 			<ingredient name="foodCornMeal" count="1"/>
 			<ingredient name="foodButterJT" count="1"/>
 		</recipe>
-		<recipe name="foodFriedMeat" count="1" craft_time="18" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingGrill">
-			<ingredient name="foodRawMeat" count="5"/>
-			<ingredient name="foodCornMeal" count="1"/>
-			<ingredient name="foodButterJT" count="1"/>
-		</recipe>
+
 		<recipe name="foodCornChips" count="1" craft_time="8" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingGrill">
 			<ingredient name="foodCornMeal" count="1"/>
 			<ingredient name="foodButterJT" count="1"/>
@@ -77,7 +77,6 @@
 			<ingredient name="foodBread" count="1"/>
 			<ingredient name="foodYuccaJam" count="1"/>
 		</recipe>
-		<!--<recipe name="Clay Roasted Meat" count="1" craft_time="30" craft_area="campfire" tags="learnable,perkMasterChef" ><ingredient name="resourceYuccaFibers" count="10"/><ingredient name="resourceClayLump" count="10"/><ingredient name="foodRawMeat" count="5"/></recipe>-->
 		<recipe name="foodCoffeeCake" count="1" craft_time="50" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 			<ingredient name="foodCornMeal" count="2"/>
@@ -122,6 +121,7 @@
 		<recipe name="foodHamburger" count="1" craft_time="30" craft_area="campfire" tags="perkMasterChef,learnable" craft_tool="toolCookingGrill">
 			<ingredient name="foodRawMeat" count="5"/>
 			<ingredient name="foodBread" count="2"/>
+			<ingredient name="foodCheese" count="1"/>
 		</recipe>
 
 		<recipe name="foodFishPie" count="1" craft_time="20" craft_area="campfire" tags="perkMasterChef,learnable" craft_tool="toolCookingPot">
@@ -170,11 +170,7 @@
 			<ingredient name="drinkJarBoiledWater" count="2"/>
 			<ingredient name="drinkBowlEmptyJT" count="1"/>
 		</recipe>
-		<recipe name="foodMysteryMeatCrafted" count="1" craft_time="15" craft_area="campfire" tags="learnable" craft_tool="toolCookingGrill">
-			<ingredient name="foodRottingFlesh" count="5"/>
-			<ingredient name="resourcePotassiumNitratePowder" count="3"/>
-			<ingredient name="drinkJarBoiledWater" count="1"/>
-		</recipe>
+
 		<recipe name="foodGrilledCorn" count="1" craft_area="campfire" craft_tool="toolCookingGrill">
 			<ingredient name="foodCropCorn" count="2"/>
 			<ingredient name="resourceAnimalFat" count="1"/>
@@ -237,29 +233,12 @@
 			<ingredient name="foodMayonnaise" count="1"/>
 		</recipe>
 
-		<recipe name="foodBakedPotatoSandwich" count="1" craft_time="30" craft_area="campfire" tags="learnable" craft_tool="toolCookingGrill">
-			<ingredient name="foodBread" count="2"/>
-			<ingredient name="foodBakedPotato" count="3"/>
-			<ingredient name="foodMayonnaise" count="1"/>
-		</recipe>
 
-		<recipe name="foodBrisket" count="1" craft_time="130" craft_area="campfire" tags="learnable">
-			<ingredient name="foodRawMeat" count="10"/>
-			<ingredient name="foodSaltJT" count="1"/>
-			<ingredient name="resourceCropCoffeeBeans" count="3"/>
-		</recipe>
 		<recipe name="foodPulledPork" count="1" craft_time="130" craft_area="campfire" tags="learnable">
 			<ingredient name="foodGrillPork" count="10"/>
 			<ingredient name="foodSaltJT" count="1"/>
 			<ingredient name="foodVinegar" count="1"/>
 		</recipe>
-		<recipe name="foodBeerCanChicken" count="1" craft_time="130" craft_area="campfire" tags="learnable">
-			<ingredient name="foodRawMeat" count="5"/>
-			<ingredient name="foodSaltJT" count="1"/>
-			<ingredient name="foodVinegar" count="1"/>
-			<ingredient name="drinkJarBeer" count="1"/>
-		</recipe>
-
 		<recipe name="foodFriedBacon" count="5" craft_area="campfire" craft_tool="toolCookingGrill">
 			<ingredient name="foodRawMeat" count="5"/>
 		</recipe>
