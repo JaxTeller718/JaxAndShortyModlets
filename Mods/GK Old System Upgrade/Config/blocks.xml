@@ -1,0 +1,498 @@
+<Gouki>
+
+    <set xpath="/blocks/block[@name='frameShapes']">    
+	        <property name="Group" value="Basics,Building,advBuilding"/>
+	        <property name="Tags" value="wood"/>
+	        <property name="DescriptionKey" value="woodFrameGroupDesc"/>
+	        <property name="Material" value="MwoodWshapes"/>
+	        <property name="Texture" value="65"/>
+	        <property name="UiBackgroundTexture" value="65"/>
+	        <property name="FuelValue" value="100"/>
+	        <property class="RepairItems">
+		        <property name="resourceWood" value="3"/>
+	        </property>
+	        <drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="10"/>
+	        <property name="EconomicBundleSize" value="20"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+	        <property name="SortOrder1" value="aaaa"/>
+	        <property class="UpgradeBlock">
+		        <property name="ToBlock" value="woodShapes"/>
+		        <property name="Item" value="resourceWood"/>
+		        <property name="ItemCount" value="8"/>
+		        <property name="UpgradeHitCount" value="4"/>
+	        </property>
+	        <property name="PassThroughDamage" value="true"/>
+	        <property name="CustomUpgradeSound" value="place_block_wood"/>
+	        <property name="CanPickup" value="true"/>
+	</set>
+	
+	<set xpath="/blocks/block[@name='woodShapes']">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="Tags" value="wood"/>
+	        <property name="DescriptionKey" value="woodGroupDesc"/>
+	        <property name="Material" value="MwoodN_shapes"/>
+	        <property name="Texture" value="241"/>
+	        <property name="UiBackgroundTexture" value="241"/>
+	        <property name="FuelValue" value="500"/>
+	        <property class="RepairItems">
+		        <property name="resourceWood" value="3"/>
+	        </property>
+	        <drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="10"/>
+	        <property name="EconomicBundleSize" value="20"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+	        <property name="SortOrder1" value="0001"/>
+	        <property class="UpgradeBlock">
+		        <property name="ToBlock" value="woodReinforcedShapes"/>
+		        <property name="Item" value="resourceWood"/>
+		        <property name="ItemCount" value="10"/>
+		        <property name="UpgradeHitCount" value="4"/>
+	        </property>
+	        <property name="PassThroughDamage" value="true"/>
+	        <property name="CustomUpgradeSound" value="place_block_wood"/>
+	</set>
+	
+	<append xpath="/blocks">
+	    <block name="woodReinforcedShapes" shapes="All">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="Tags" value="wood"/>
+	        <property name="DescriptionKey" value="rWoodGroupDesc"/>
+	        <property name="Material" value="MwoodR_shapes"/>
+	        <property name="Texture" value="379"/>
+	        <property name="UiBackgroundTexture" value="379"/>
+	        <property name="FuelValue" value="500"/>
+	        <property class="RepairItems">
+		        <property name="resourceWood" value="6"/>
+	        </property>
+	        <drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="10"/>
+	        <property name="EconomicBundleSize" value="20"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+	        <property name="SortOrder1" value="0001"/>
+	        <property class="UpgradeBlock">
+		        <property name="ToBlock" value="woodReinforcedMetalShapes"/>
+		        <property name="Item" value="resourceScrapIron"/>
+		        <property name="ItemCount" value="10"/>
+		        <property name="UpgradeHitCount" value="4"/>
+	        </property>
+	        <property name="PassThroughDamage" value="true"/>
+	        <property name="CustomUpgradeSound" value="place_block_wood"/>
+        </block>
+		
+		<block name="woodReinforcedMetalShapes" shapes="All">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="DescriptionKey" value="rWoodMetalGroupDesc"/>
+	        <property name="Material" value="MwoodMR_shapes"/>
+	        <property name="Texture" value="380"/>
+	        <property name="UiBackgroundTexture" value="380"/>
+	        <property name="FuelValue" value="500"/>
+	        <property class="RepairItems">
+		        <property name="resourceWood" value="8"/>
+				<property name="resourceScrapIron" value="8"/>
+	        </property>
+	        <drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+			<drop event="Harvest" name="resourceScrapIron" count="2" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="10"/>
+	        <property name="EconomicBundleSize" value="20"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+	        <property name="SortOrder1" value="0001"/>
+	        <property class="UpgradeBlock">
+		        <property name="ToBlock" value="scrapIronShapes"/>
+		        <property name="Item" value="resourceScrapIron"/>
+		        <property name="ItemCount" value="10"/>
+		        <property name="UpgradeHitCount" value="4"/>
+	        </property>
+	        <property name="PassThroughDamage" value="true"/>
+	        <property name="CustomUpgradeSound" value="place_block_metal"/>
+        </block>
+		
+		<block name="scrapIronShapes" shapes="All">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="DescriptionKey" value="scrapIronGroupDesc"/>
+	        <property name="Material" value="MscrapIron_shapes"/>
+	        <property name="Texture" value="307"/>
+	        <property name="UiBackgroundTexture" value="307"/>
+	        <property class="RepairItems">
+				<property name="resourceScrapIron" value="10"/>
+	        </property>
+			<drop event="Harvest" name="resourceScrapIron" count="10" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="10"/>
+	        <property name="EconomicBundleSize" value="20"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+	        <property name="SortOrder1" value="0001"/>
+	        <property class="UpgradeBlock">
+		        <property name="ToBlock" value="scrapIronRShapes"/>
+		        <property name="Item" value="resourceScrapIron"/>
+		        <property name="ItemCount" value="10"/>
+		        <property name="UpgradeHitCount" value="4"/>
+	        </property>
+	        <property name="PassThroughDamage" value="true"/>
+	        <property name="CustomUpgradeSound" value="place_block_metal"/>
+        </block>
+		
+		<block name="scrapIronRShapes" shapes="All">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="DescriptionKey" value="rScrapIronGroupDesc"/>
+	        <property name="Material" value="MscrapIR_shapes"/>
+	        <property name="Texture" value="352"/>
+	        <property name="UiBackgroundTexture" value="352"/>
+	        <property class="RepairItems">
+				<property name="resourceScrapIron" value="20"/>
+	        </property>
+			<drop event="Harvest" name="resourceScrapIron" count="20" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="10"/>
+	        <property name="EconomicBundleSize" value="20"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+	        <property name="SortOrder1" value="0001"/>
+	        <property class="UpgradeBlock">
+		        <property name="ToBlock" value="FlagstoneShapes"/>
+		        <property name="Item" value="resourceCobblestones"/>
+		        <property name="ItemCount" value="10"/>
+		        <property name="UpgradeHitCount" value="4"/>
+	        </property>
+	        <property name="PassThroughDamage" value="true"/>
+	        <property name="CustomUpgradeSound" value="place_block_concrete"/>
+        </block>
+		
+		<block name="FlagstoneShapes" shapes="All">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="DescriptionKey" value="flagstoneGroupDesc"/>
+	        <property name="Material" value="Mflagstone_shapes"/>
+	        <property name="Texture" value="226"/>
+	        <property name="UiBackgroundTexture" value="226"/>
+	        <property class="RepairItems">
+		        <property name="resourceCobblestones" value="6"/>
+	        </property>
+	        <drop event="Harvest" name="resourceClayLump" count="6" tag="allHarvest"/>
+	        <drop event="Harvest" name="resourceRockSmall" count="6" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="terrDestroyedWoodDebris" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="10"/>
+	        <property name="EconomicBundleSize" value="20"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+	        <property name="SortOrder1" value="0001"/>
+	        <property class="UpgradeBlock">
+		        <property name="ToBlock" value="cobblestoneShapes"/>
+		        <property name="Item" value="resourceCobblestones"/>
+		        <property name="ItemCount" value="10"/>
+		        <property name="UpgradeHitCount" value="4"/>
+	        </property>
+	        <property name="PassThroughDamage" value="true"/>
+	        <property name="CustomUpgradeSound" value="place_block_concrete"/>
+        </block>
+	</append>
+	
+	<set xpath="/blocks/block[@name='cobblestoneShapes']">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="DescriptionKey" value="cobblestoneGroupDesc"/>
+	        <property name="Material" value="McobblestoneN_shapes"/>
+	        <property name="Texture" value="328"/>
+	        <property name="UiBackgroundTexture" value="328"/>
+	        <property class="RepairItems">
+		        <property name="resourceCobblestones" value="8"/>
+	        </property>
+	        <property name="CustomUpgradeSound" value="place_block_concrete"/>
+	        <drop event="Harvest" name="resourceClayLump" count="6" tag="allHarvest"/>
+	        <drop event="Harvest" name="resourceRockSmall" count="6" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="14"/>
+	        <property name="EconomicBundleSize" value="20"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+	        <property name="SortOrder1" value="0008"/>
+	        <property class="UpgradeBlock">
+		        <property name="ToBlock" value="brickShapes"/>
+		        <property name="Item" value="resourceBricks"/>
+		        <property name="ItemCount" value="10"/>
+		        <property name="UpgradeHitCount" value="4"/>
+	        </property>
+	</set>
+	
+	<set xpath="/blocks/block[@name='brickShapes']">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="DescriptionKey" value="brickGroupDesc"/>
+	        <property name="Material" value="MbrickN_shapes"/>
+	        <property name="Weight" value="70"/>
+	        <property name="Texture" value="7"/>
+	        <property name="UiBackgroundTexture" value="7"/>
+	        <property name="CreativeMode" value="None"/>
+	        <property class="RepairItems">
+		        <property name="resourceBricks" value="6"/>
+	        </property>
+	        <drop event="Harvest" name="resourceRockSmall" count="16" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="8"/>
+	        <property name="EconomicBundleSize" value="20"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+	        <property name="SortOrder1" value="0007"/>
+	        <property class="UpgradeBlock">
+		        <property name="ToBlock" value="pouredConcreteShapes"/>
+		        <property name="Item" value="resourceConcreteMix"/>
+		        <property name="ItemCount" value="10"/>
+		        <property name="UpgradeHitCount" value="4"/>
+	        </property>
+	        <property name="CustomUpgradeSound" value="place_block_concrete"/>
+	</set>
+	
+	<set xpath="/blocks/block[@name='concreteShapes']">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="DescriptionKey" value="concreteGroupDesc"/>
+	        <property name="DisplayType" value="blockHardened"/>
+	        <property name="Material" value="MconcreteN_shapes"/>
+	        <property name="Texture" value="8"/>
+	        <property name="UiBackgroundTexture" value="8"/>
+	        <property class="RepairItems">
+		        <property name="resourceConcreteMix" value="8"/>
+	        </property>
+	        <drop event="Harvest" name="resourceRockSmall" count="25" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="50"/>
+	        <property name="EconomicBundleSize" value="20"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+	        <property name="SortOrder1" value="0009"/>
+	        <property class="UpgradeBlock">
+		        <property name="ToBlock" value="pouredConcreteNShapes"/>
+		        <property name="Item" value="resourceConcreteMix"/>
+		        <property name="ItemCount" value="10"/>
+		        <property name="UpgradeHitCount" value="4"/>
+	        </property>
+	        <property name="CustomUpgradeSound" value="place_block_concrete"/>
+	</set>
+	
+	<append xpath="/blocks">
+		<block name="concreteReinforcedShapes" shapes="All">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="DescriptionKey" value="concreteGroupDesc"/>
+	        <property name="DisplayType" value="blockHardened"/>
+	        <property name="Material" value="MconcreteR_shapes"/>
+	        <property name="Texture" value="315"/>
+	        <property name="UiBackgroundTexture" value="315"/>
+	        <property class="RepairItems">
+		        <property name="resourceConcreteMix" value="8"/>
+	        </property>
+	        <drop event="Harvest" name="resourceRockSmall" count="25" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="50"/>
+	        <property name="EconomicBundleSize" value="20"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+	        <property name="SortOrder1" value="0009"/>
+	        <property class="UpgradeBlock">
+		        <property name="ToBlock" value="steelShapes"/>
+		        <property name="Item" value="resourceForgedSteel"/>
+		        <property name="ItemCount" value="10"/>
+		        <property name="UpgradeHitCount" value="4"/>
+	        </property>
+	        <property name="CustomUpgradeSound" value="place_block_concrete"/>
+        </block>
+
+        <block name="stainlessSteelShapes" shapes="All">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="DescriptionKey" value="stainlessSteelBlockGroupDesc"/>
+	        <property name="Material" value="Mstainless_shapes"/>
+	        <property name="DisplayType" value="blockHardened"/>
+	        <property name="PassThroughDamage" value="true"/>
+			<property name="Texture" value="191"/>
+	        <property name="UiBackgroundTexture" value="191"/>
+	        <property class="RepairItems">
+		        <property name="resourceForgedSteel" value="10"/>
+				<property name="resourceSteelPolishH" value="1"/>
+	        </property>
+	        <property name="CustomUpgradeSound" value="place_block_metal"/>
+	        <drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="160"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+	        <property name="SortOrder1" value="0011"/>
+        </block>
+		
+		<block name="pouredConcreteShapes" shapes="All">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="DescriptionKey" value="devOnlyGroupDesc"/>
+	        <property name="DisplayType" value="blockHardened"/>
+	        <property name="Material" value="Mpouredconcrete_shapes"/>
+	        <property name="Texture" value="62"/>
+	        <property name="UiBackgroundTexture" value="62"/>
+	        <property class="RepairItems">
+		        <property name="resourceConcreteMix" value="8"/>
+	        </property>
+	        <drop event="Harvest" name="resourceRockSmall" count="25" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="50"/>
+	        <property name="EconomicBundleSize" value="20"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+			<property name="SortOrder1" value="40m0"/>
+			<property class="UpgradeBlock">
+		        <property name="ToBlock" value="concreteShapes"/>
+		        <property name="Item" value="resourceConcreteMix"/>
+		        <property name="ItemCount" value="10"/>
+		        <property name="UpgradeHitCount" value="4"/>
+	        </property>
+	        <property name="CustomUpgradeSound" value="place_block_concrete"/>
+        </block>
+		
+		<block name="pouredConcreteNShapes" shapes="All">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="DescriptionKey" value="devOnlyGroupDesc"/>
+	        <property name="DisplayType" value="blockHardened"/>
+	        <property name="Material" value="MpouredCN_shapes"/>
+	        <property name="Texture" value="62"/>
+	        <property name="UiBackgroundTexture" value="62"/>
+	        <property class="RepairItems">
+		        <property name="resourceConcreteMix" value="8"/>
+	        </property>
+	        <drop event="Harvest" name="resourceRockSmall" count="25" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="50"/>
+	        <property name="EconomicBundleSize" value="20"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+			<property name="SortOrder1" value="40m0"/>
+			<property class="UpgradeBlock">
+		        <property name="ToBlock" value="concreteReinforcedShapes"/>
+		        <property name="Item" value="resourceConcreteMix"/>
+		        <property name="ItemCount" value="10"/>
+		        <property name="UpgradeHitCount" value="4"/>
+	        </property>
+	        <property name="CustomUpgradeSound" value="place_block_concrete"/>
+        </block>
+
+        <block name="rebarFrameIShapes" shapes="All">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="DescriptionKey" value="rebarFrameGroupDesc"/>
+	        <property name="Material" value="MrebarI_shapes"/>
+	        <property name="Texture" value="445"/>
+	        <property name="UiBackgroundTexture" value="445"/>
+	        <property class="RepairItems">
+		        <property name="resourceForgedIron" value="1"/>
+	        </property>
+	        <drop event="Harvest" name="resourceScrapIron" count="4,10" tag="allHarvest"/>
+	        <drop event="Destroy" count="0"/>
+	        <drop event="Fall" name="terrDestroyedStone" count="1" prob="0.75" stick_chance="1"/>
+	        <property name="EconomicValue" value="25"/>
+	        <property name="EconomicBundleSize" value="5"/>
+	        <property name="FilterTags" value="MC_Shapes"/>
+			<property name="SortOrder1" value="g0v0"/>
+			<property class="UpgradeBlock">
+		        <property name="ToBlock" value="pouredConcreteNShapes"/>
+		        <property name="Item" value="resourceConcreteMix"/>
+		        <property name="ItemCount" value="10"/>
+		        <property name="UpgradeHitCount" value="4"/>
+	        </property>
+	        <property name="CustomUpgradeSound" value="place_block_concrete"/>
+			<property name="CanPickup" value="true"/>
+        </block>
+		
+	</append>
+    
+	<set xpath="/blocks/block[@name='steelShapes']">
+	    <property name="Group" value="Building,advBuilding"/>
+	    <property name="DescriptionKey" value="steelBlockGroupDesc"/>
+	    <property name="Material" value="Msteel_shapes"/>
+	    <property name="DisplayType" value="blockHardened"/>
+	    <property name="PassThroughDamage" value="true"/>
+	    <property name="Texture" value="356"/>
+	    <property name="UiBackgroundTexture" value="356"/>
+	    <property class="RepairItems">
+		    <property name="resourceForgedSteel" value="8"/>
+	    </property>
+	    <property name="CustomUpgradeSound" value="place_block_metal"/>
+	    <drop event="Harvest" name="resourceScrapIron" count="15" tag="allHarvest"/>
+	    <drop event="Destroy" count="0"/>
+	    <drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	    <property name="EconomicValue" value="160"/>
+	    <property name="FilterTags" value="MC_Shapes"/>
+	    <property name="SortOrder1" value="0011"/>
+		<property class="UpgradeBlock">
+		    <property name="ToBlock" value="stainlessSteelShapes"/>
+		    <property name="Item" value="resourceSteelPolishH"/>
+		    <property name="ItemCount" value="4"/>
+		    <property name="UpgradeHitCount" value="4"/>
+	    </property>
+	</set>
+	
+	<remove xpath="/blocks/block[@name='palletBricksBase']/drop[@event='Harvest']"/>
+    <append xpath="/blocks/block[@name='palletBricksBase']">
+	    <drop event="Harvest" name="resourceBricks" count="8,12" tag="oreWoodHarvest"/>
+	    <drop event="Harvest" name="resourceWood" count="3" tag="allHarvest"/>
+	</append>
+	
+	<append xpath="/blocks">
+	    <block name="pouredConcreteMaster">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="CustomIcon" value="pouredConcreteBlock"/>
+	        <property name="DescriptionKey" value="concreteGroupDesc"/>
+	        <property name="DisplayType" value="blockHardened"/>
+	        <property name="Material" value="Mpouredconcrete_shapes"/>
+	        <property name="Texture" value="62"/>
+	       <!-- <property name="ImposterExchange" value="imposterBlock" param1="2"/> -->
+	        <property name="CreativeMode" value="None"/>
+	        <property class="RepairItems"> <property name="resourceConcreteMix" value="8"/> </property>
+	        <drop event="Destroy" count="0"/>
+	        <property name="FilterTags" value="MC_building"/>
+	        <property name="SortOrder1" value="40m0"/>
+	        <property name="SortOrder2" value="0002"/>
+        </block>
+		
+		<block name="pouredConcreteNMaster">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="CustomIcon" value="pouredConcreteBlock"/>
+	        <property name="DescriptionKey" value="concreteGroupDesc"/>
+	        <property name="DisplayType" value="blockHardened"/>
+	        <property name="Material" value="MpouredCN_shapes"/>
+	        <property name="Texture" value="62"/>
+	       <!-- <property name="ImposterExchange" value="imposterBlock" param1="2"/> -->
+	        <property name="CreativeMode" value="None"/>
+	        <property class="RepairItems"> <property name="resourceConcreteMix" value="8"/> </property>
+	        <drop event="Destroy" count="0"/>
+	        <property name="FilterTags" value="MC_building"/>
+	        <property name="SortOrder1" value="40m0"/>
+	        <property name="SortOrder2" value="0002"/>
+        </block>
+		
+		<block name="rebarFrameMaster">
+	        <property name="Group" value="Building,advBuilding"/>
+	        <property name="DescriptionKey" value="rebarFrameGroupDesc"/>
+	        <property name="Material" value="MrebarI_shapes"/>
+	        <property name="Shape" value="New"/>
+	        <property name="LightOpacity" value="0"/>
+	        <property name="Model" value="cube"/>
+	        <property name="Mesh" value="cutout"/> <!-- A16, any shape should automatically be suitable as a frame block when set to the cutout mesh -->
+	        <property name="Frame"/> <!-- tells the game to render this as a frame with backfaces and without zfighting -->
+	        <property name="Texture" value="445"/>
+	        <property name="ImposterExclude" value="true"/>
+	        <property name="ImposterDontBlock" value="true"/>
+	        <property name="CreativeMode" value="None"/>
+	        <property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
+	        <!--<property name="DisplayType" value="blockShootThrough"/>-->
+	        <property name="CustomUpgradeSound" value="place_block_concrete"/>
+	        <!-- <property name="CustomUpgradeSound" value="place_block_wood"/> -->
+	        <property class="RepairItems"> <property name="resourceForgedIron" value="1"/> </property>
+	        <drop event="Destroy" name="resourceScrapIron" count="1,5"/>
+	        <drop event="Fall" name="scrapMetalPile" count="1" prob="0.2" stick_chance="1"/>
+	        <property name="EconomicValue" value="25"/>
+	        <property name="EconomicBundleSize" value="5"/>
+	        <property name="FilterTags" value="MC_building"/>
+	        <property name="SortOrder1" value="g0v0"/>
+	        <property name="SortOrder2" value="0002"/>
+        </block>
+		
+	</append>
+</Gouki>
