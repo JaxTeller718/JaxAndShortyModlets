@@ -38,14 +38,14 @@
 			<ingredient name="foodCropOnionJT" count="5"/>
 			<ingredient name="drinkBowlEmptyJT" count="1"/>
 		</recipe>
-		<recipe name="foodShortyStewJT" count="1" craft_time="15" craft_area="campfire" tags="learnable">
+		<recipe name="foodShortyStewJT" count="1" craft_time="15" craft_area="survivalCampfireJT" tags="learnable">
 			<ingredient name="foodCropPotato" count="2"/>
 			<ingredient name="foodMixedVeggiesJT" count="1"/>
 			<ingredient name="foodRawMeat" count="2"/>
 			<ingredient name="foodButterJT" count="1"/>
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 		</recipe>
-		<recipe name="foodStrawberryPieJT" count="1" craft_time="15" craft_area="campfire" tags="learnable">
+		<recipe name="foodStrawberryPieJT" count="1" craft_time="15" craft_area="survivalsurvivalCampfireJTJT" tags="learnable">
 			<ingredient name="foodFlourJT" count="5"/>
 			<ingredient name="foodCropStrawberryJT" count="5"/>
 			<ingredient name="foodButterJT" count="1"/>
@@ -66,7 +66,7 @@
 			<ingredient name="foodCanPears" count="1"/>
 			<ingredient name="drinkBowlEmptyJT" count="1"/>
 		</recipe>
-		<recipe name="foodMixedVeggiesJT" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+		<recipe name="foodMixedVeggiesJT" count="1" craft_area="survivalCampfireJT" craft_tool="toolCookingPot">
 		<ingredient name="foodCropTomatoJT" count="2"/>
 		<ingredient name="foodCropOnionJT" count="2"/>
 		<ingredient name="foodCropCabbageJT" count="2"/>
