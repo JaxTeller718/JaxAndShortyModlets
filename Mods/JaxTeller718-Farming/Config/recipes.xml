@@ -1,0 +1,156 @@
+<JaxTeller718>
+
+
+	<append xpath="/recipes">
+		<recipe name="plantedWheat1JT" count="1" craft_time="3" tags="learnable">
+			<ingredient name="foodCropWheatJT" count="5"/>
+		</recipe>
+		<recipe name="plantedCarrot1JT" count="1" craft_time="3" tags="learnable">
+			<ingredient name="foodCropCarrotJT" count="5"/>
+		</recipe>
+		<recipe name="plantedCabbage1JT" count="1" craft_time="3" tags="learnable">
+			<ingredient name="foodCropCabbageJT" count="5"/>
+		</recipe>
+		<recipe name="plantedCucumber1JT" count="1" craft_time="3" tags="learnable">
+			<ingredient name="foodCropCucumberJT" count="5"/>
+		</recipe>
+		<recipe name="plantedLettuce1JT" count="1" craft_time="3" tags="learnable">
+			<ingredient name="foodCropLettuceJT" count="5"/>
+		</recipe>
+		<recipe name="plantedTomato1JT" count="1" craft_time="3" tags="learnable">
+			<ingredient name="foodCropTomatoJT" count="5"/>
+		</recipe>
+		<recipe name="plantedOnion1JT" count="1" craft_time="3" tags="learnable">
+			<ingredient name="foodCropOnionJT" count="5"/>
+		</recipe>
+		<recipe name="plantedStrawberry1JT" count="1" craft_time="3" tags="learnable">
+			<ingredient name="foodCropStrawberryJT" count="5"/>
+		</recipe>
+
+		<recipe name="foodLettuceAndTomatoJT" count="1" craft_time="5">
+			<ingredient name="foodCropLettuceJT" count="1"/>
+			<ingredient name="foodCropTomatoJT" count="1"/>
+		</recipe>
+		
+		<recipe name="foodSaladJT" count="1" craft_time="5" tags="learnable">
+			<ingredient name="foodCropCucumberJT" count="5"/>
+			<ingredient name="foodLettuceAndTomatoJT" count="5"/>
+			<ingredient name="foodCropOnionJT" count="5"/>
+			<ingredient name="drinkBowlEmptyJT" count="1"/>
+		</recipe>
+		<recipe name="foodShortyStewJT" count="1" craft_time="15" craft_area="campfire" tags="learnable">
+			<ingredient name="foodCropPotato" count="2"/>
+			<ingredient name="foodMixedVeggiesJT" count="1"/>
+			<ingredient name="foodRawMeat" count="2"/>
+			<ingredient name="foodButterJT" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="foodStrawberryPieJT" count="1" craft_time="15" craft_area="campfire" tags="learnable">
+			<ingredient name="foodFlourJT" count="5"/>
+			<ingredient name="foodCropStrawberryJT" count="5"/>
+			<ingredient name="foodButterJT" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="drinkBowlEmptyJT" count="1"/>
+		</recipe>
+		<recipe name="foodFlourJT" count="1">
+			<ingredient name="foodCropWheatJT" count="5"/>
+		</recipe>
+		<recipe name="foodBowlVeggiesJT" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+			<ingredient name="foodCropCarrotJT" count="3"/>
+			<ingredient name="foodCropCorn" count="3"/>
+			<ingredient name="foodCanPeas" count="1"/>
+			<ingredient name="drinkBowlEmptyJT" count="1"/>
+		</recipe>
+		<recipe name="foodBowlFruitJT" count="1">
+			<ingredient name="foodCropStrawberryJT" count="5"/>
+			<ingredient name="foodCanPears" count="1"/>
+			<ingredient name="drinkBowlEmptyJT" count="1"/>
+		</recipe>
+		<recipe name="foodMixedVeggiesJT" count="1" craft_area="campfire" craft_tool="toolCookingPot">
+		<ingredient name="foodCropTomatoJT" count="2"/>
+		<ingredient name="foodCropOnionJT" count="2"/>
+		<ingredient name="foodCropCabbageJT" count="2"/>
+		<ingredient name="foodCropCarrotJT" count="2"/>
+		<ingredient name="foodCropCorn" count="2"/>
+		</recipe>
+	</append>
+	<set xpath="/recipes/recipe[@name='foodHoboStew']/ingredient[@name='foodCropCorn']/@name">foodMixedVeggiesJT</set>
+	<set xpath="/recipes/recipe[@name='foodVegetableStew']/ingredient[@name='foodCropCorn']/@name">foodMixedVeggiesJT</set>
+
+
+	<set xpath="/recipes/recipe[@name='foodPumpkinBread']/ingredient[@name='foodCornMeal']/@name">foodFlourJT</set>
+	<set xpath="/recipes/recipe[@name='foodSpaghetti']/ingredient[@name='resourceAnimalFat']/@name">foodCropTomatoJT</set>
+	<insertAfter xpath="/recipes/recipe[@name='drinkJarGrandpasLearningElixir']/ingredient[@name='drinkJarBeer']">
+		<ingredient name="foodCropStrawberryJT" count="5"/>
+	</insertAfter>
+	<insertAfter xpath="/recipes/recipe[@name='drinkJarGrandpasAwesomeSauce']/ingredient[@name='ammoGasCan']">
+		<ingredient name="foodCropStrawberryJT" count="5"/>
+	</insertAfter>
+	<insertAfter xpath="/recipes/recipe[@name='foodFishTacos']/ingredient[@name='foodCornMeal']">
+		<ingredient name="foodLettuceAndTomatoJT" count="2"/>
+	</insertAfter>
+
+	<append xpath="/recipes">
+
+		<recipe name="plantedAloe1" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedBlueberry1" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedChrysanthemum1" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedCoffee1" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedCorn1" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedCotton1" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedGoldenrod1" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedHop1" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedMushroom1" count="1" craft_time="2" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedPotato1" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedYucca1" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedPumpkin1" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedWheat1JT" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedCarrot1JT" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedCabbage1JT" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedCucumber1JT" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedLettuce1JT" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedTomato1JT" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedOnion1JT" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+		<recipe name="plantedStrawberry1JT" count="1" craft_time="1" tags="learnable" craft_area="farmTableJT">
+			<ingredient name="resourceSeedPackJT" count="1"/>
+		</recipe>
+	</append>
+</JaxTeller718>

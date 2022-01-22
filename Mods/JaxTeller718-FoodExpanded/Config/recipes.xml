@@ -122,6 +122,7 @@
 			<ingredient name="foodRawMeat" count="5"/>
 			<ingredient name="foodBread" count="2"/>
 			<ingredient name="foodCheese" count="1"/>
+			<ingredient name="foodLettuceAndTomatoJT" count="1"/>
 		</recipe>
 
 		<recipe name="foodFishPie" count="1" craft_time="20" craft_area="campfire" tags="perkMasterChef,learnable" craft_tool="toolCookingPot">
@@ -147,6 +148,7 @@
 			<ingredient name="foodBread" count="2"/>
 			<ingredient name="foodButterJT" count="1"/>
 			<ingredient name="foodCheese" count="1"/>
+			<ingredient name="foodLettuceAndTomatoJT" count="1"/>
 		</recipe>
 		<recipe name="foodBiscuit" count="1" craft_time="10" craft_area="campfire" tags="perkMasterChef,learnable" craft_tool="toolCookingPot">
 			<ingredient name="foodCornMeal" count="3"/>
@@ -188,6 +190,7 @@
 			<ingredient name="foodBread" count="2"/>
 			<ingredient name="foodMayonnaise" count="1"/>
 			<ingredient name="foodFriedBacon" count="1"/>
+			<ingredient name="foodLettuceAndTomatoJT" count="1"/>
 		</recipe>
 
 		<recipe name="foodTunaSandwichJT" count="1" tags="learnable" craft_area="toasterJT">
@@ -214,7 +217,7 @@
 		</recipe>
 		<recipe name="foodDeulxeHamCheeseSandwich" count="1" craft_time="30" craft_area="campfire" tags="learnable" craft_tool="toolCookingGrill">
 			<ingredient name="foodBread" count="2"/>
-			<ingredient name="foodButterJT" count="1"/>
+			<ingredient name="foodLettuceAndTomatoJT" count="1"/>
 			<ingredient name="foodCheese" count="1"/>
 			<ingredient name="foodHoneyGlazedHam" count="1"/>
 			<ingredient name="foodMayonnaise" count="1"/>

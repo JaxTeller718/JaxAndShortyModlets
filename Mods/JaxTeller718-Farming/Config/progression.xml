@@ -1,0 +1,3 @@
+<JaxTeller718>
+	<append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']/effect_group/passive_effect[@level='2,3']/@tags">,foodSaladJT,plantedWheat1JT,plantedCarrot1JT,plantedCabbage1JT,plantedCucumber1JT,plantedLettuce1JT,plantedTomato1JT,plantedOnion1JT,plantedStrawberry1JT</append>
+</JaxTeller718>

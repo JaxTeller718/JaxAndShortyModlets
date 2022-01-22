@@ -1,0 +1,402 @@
+﻿<JaxTeller718>
+
+	<set xpath="/blocks/block[@name='cropsGrowingMaster']/property[@name='PlantGrowing.GrowthRate']/@value">120.0</set>
+
+	<append xpath="/blocks">
+		<block name="plantedWheat1JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="UnlockedBy" value="plantedWheat1JTSchematic"/>
+			<property name="CustomIcon" value="plantedWheat1JT"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedWheat1.prefab"/>
+			<property name="Collide" value="melee"/>
+			<property name="PlantGrowing.Next" value="plantedWheat2JT"/>
+			<property name="Group" value="Food/Cooking"/>
+			<drop event="Destroy" name="plantedWheat1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedWheat2JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="plantedPotato1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedWheat2.prefab"/>
+			<property name="PlantGrowing.Next" value="plantedWheat3HarvestPlayerJT"/>
+			<property name="Collide" value="melee"/>
+			<drop event="Destroy" name="plantedWheat1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedWheat3HarvestJT">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedWheat3.prefab"/>
+			<drop event="Harvest" name="foodCropWheatJT" count="1" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="foodCropWheatJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedWheat3HarvestPlayerJT">
+			<property name="Extends" value="plantedWheat3HarvestJT"/>
+			<property name="CustomIcon" value="plantedPotato1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="foodCropWheatJT" count="1" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropWheatJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<drop event="Destroy" name="plantedWheat1JT" count="1"/>	
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedWheat3HarvestRandomHelperJT">
+			<property name="Extends" value="plantedWheat3HarvestPlayerJT" param1="MultiBlockDim"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="plantedYucca3Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
+		<block name="plantedCarrot1JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="UnlockedBy" value="plantedCarrot1JTSchematic"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="plantedCarrot1JT"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedCarrot1.prefab"/>
+			<property name="Collide" value="melee"/>
+			<property name="PlantGrowing.Next" value="plantedCarrot2JT"/>
+			<property name="Group" value="Food/Cooking"/>
+			<drop event="Destroy" name="plantedCarrot1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedCarrot2JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="plantedPotato1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedCarrot2.prefab"/>
+			<property name="PlantGrowing.Next" value="plantedCarrot3HarvestPlayerJT"/>
+			<property name="Collide" value="melee"/>
+			<drop event="Destroy" name="plantedCarrot1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedCarrot3HarvestJT">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedCarrot3.prefab"/>
+			<drop event="Harvest" name="foodCropCarrotJT" count="1" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="foodCropCarrotJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedCarrot3HarvestPlayerJT">
+			<property name="Extends" value="plantedCarrot3HarvestJT"/>
+			<property name="CustomIcon" value="plantedPotato1"/>
+			<property name="CreativeMode" value="Player"/>
+			<drop event="Harvest" name="foodCropCarrotJT" count="1" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropCarrotJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<drop event="Destroy" name="plantedCarrot1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedCarrot3HarvestRandomHelperJT">
+			<property name="Extends" value="plantedCarrot3HarvestJT" param1="MultiBlockDim"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="plantedYucca3Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
+		<block name="plantedCabbage1JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="UnlockedBy" value="plantedCabbage1JTSchematic"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="CustomIcon" value="plantedCabbage1JT"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedCabbage1.prefab"/>
+			<property name="Collide" value="melee"/>
+			<property name="PlantGrowing.Next" value="plantedCabbage2JT"/>
+			<property name="Group" value="Food/Cooking"/>
+			<drop event="Destroy" name="plantedCabbage1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedCabbage2JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="plantedPotato1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedCabbage2.prefab"/>
+			<property name="PlantGrowing.Next" value="plantedCabbage3HarvestPlayerJT"/>
+			<property name="Collide" value="melee"/>
+			<drop event="Destroy" name="plantedCabbage1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedCabbage3HarvestJT">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedCabbage3.prefab"/>
+			<drop event="Harvest" name="foodCropCabbageJT" count="1" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="foodCropCabbageJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedCabbage3HarvestPlayerJT">
+			<property name="Extends" value="plantedCabbage3HarvestJT"/>
+			<property name="CustomIcon" value="plantedPotato1"/>
+			<property name="CreativeMode" value="Player"/>
+			<drop event="Harvest" name="foodCropCabbageJT" count="1" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropCabbageJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<drop event="Destroy" name="plantedCabbage1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedCabbage3HarvestRandomHelperJT">
+			<property name="Extends" value="plantedCabbage3HarvestJT" param1="MultiBlockDim"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="plantedYucca3Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
+		<block name="plantedCucumber1JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="UnlockedBy" value="plantedCucumber1JTSchematic"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="CustomIcon" value="plantedCucumber1JT"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedCucumber1.prefab"/>
+			<property name="Collide" value="melee"/>
+			<property name="PlantGrowing.Next" value="plantedCucumber2JT"/>
+			<property name="Group" value="Food/Cooking"/>
+			<drop event="Destroy" name="plantedCucumber1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedCucumber2JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="plantedPotato1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedCucumber2.prefab"/>
+			<property name="PlantGrowing.Next" value="plantedCucumber3HarvestPlayerJT"/>
+			<property name="Collide" value="melee"/>
+			<drop event="Destroy" name="plantedCucumber1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedCucumber3HarvestJT">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedCucumber3.prefab"/>
+			<drop event="Harvest" name="foodCropCucumberJT" count="1" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="foodCropCucumberJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedCucumber3HarvestPlayerJT">
+			<property name="Extends" value="plantedCucumber3HarvestJT"/>
+			<property name="CustomIcon" value="plantedPotato1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="foodCropCucumberJT" count="1" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropCucumberJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<drop event="Destroy" name="plantedCucumber1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedCucumber3HarvestRandomHelperJT">
+			<property name="Extends" value="plantedCucumber3HarvestJT" param1="MultiBlockDim"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="plantedYucca3Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
+		<block name="plantedLettuce1JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="UnlockedBy" value="plantedLettuce1JTSchematic"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="CustomIcon" value="plantedLettuce1JT"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedLettuce1.prefab"/>
+			<property name="Collide" value="melee"/>
+			<property name="PlantGrowing.Next" value="plantedLettuce2JT"/>
+			<property name="Group" value="Food/Cooking"/>
+			<drop event="Destroy" name="plantedLettuce1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedLettuce2JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="plantedPotato1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedLettuce2.prefab"/>
+			<property name="PlantGrowing.Next" value="plantedLettuce3HarvestPlayerJT"/>
+			<property name="Collide" value="melee"/>
+			<drop event="Destroy" name="plantedLettuce1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedLettuce3HarvestJT">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedLettuce3.prefab"/>
+			<drop event="Harvest" name="foodCropLettuceJT" count="1" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="foodCropLettuceJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedLettuce3HarvestPlayerJT">
+			<property name="Extends" value="plantedLettuce3HarvestJT"/>
+			<property name="CustomIcon" value="plantedPotato1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="foodCropLettuceJT" count="1" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropLettuceJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<drop event="Destroy" name="plantedLettuce1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedLettuce3HarvestRandomHelperJT">
+			<property name="Extends" value="plantedLettuce3HarvestJT" param1="MultiBlockDim"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="plantedYucca3Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
+		<block name="plantedTomato1JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="UnlockedBy" value="plantedTomato1JTSchematic"/>
+			<property name="CustomIcon" value="plantedTomato1JT"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedTomato1.prefab"/>
+			<property name="PlantGrowing.Next" value="plantedTomato2JT"/>
+			<property name="Group" value="Food/Cooking"/>
+			<drop event="Destroy" name="plantedTomato1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedTomato2JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="7plantedPotato1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedTomato2.prefab"/>
+			<property name="PlantGrowing.Next" value="plantedTomato3HarvestPlayerJT"/>
+			<drop event="Destroy" name="plantedTomato1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedTomato3HarvestJT">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedTomato3.prefab"/>
+			<drop event="Harvest" name="foodCropTomatoJT" count="1" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="foodCropTomatoJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedTomato3HarvestPlayerJT">
+			<property name="Extends" value="plantedTomato3HarvestJT"/>
+			<property name="CustomIcon" value="plantedPotato1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="foodCropTomatoJT" count="1" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropTomatoJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<drop event="Destroy" name="plantedTomato1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedTomato3HarvestRandomHelperJT">
+			<property name="Extends" value="plantedTomato3HarvestJT" param1="MultiBlockDim"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="plantedYucca3Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
+		<block name="plantedOnion1JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="UnlockedBy" value="plantedOnion1JTSchematic"/>
+			<property name="CustomIcon" value="plantedOnion1JT"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedOnion1"/>
+			<property name="PlantGrowing.Next" value="plantedOnion2JT"/>
+			<property name="Group" value="Food/Cooking"/>
+			<drop event="Destroy" name="plantedOnion1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedOnion2JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="plantedOnion1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedOnion2"/>
+			<property name="PlantGrowing.Next" value="plantedOnion3HarvestPlayerJT"/>
+			<drop event="Destroy" name="plantedOnion1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedOnion3HarvestJT">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedOnion3Harvestable"/>
+			<drop event="Harvest" name="foodCropOnionJT" count="1" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="foodCropOnionJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedOnion3HarvestPlayerJT">
+			<property name="Extends" value="plantedOnion3HarvestJT"/>
+			<property name="CustomIcon" value="plantedOnion1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="foodCropOnionJT" count="1" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropOnionJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<drop event="Destroy" name="plantedOnion1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedOnion3HarvestRandomHelperJT">
+			<property name="Extends" value="plantedOnion3HarvestJT" param1="MultiBlockDim"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="plantedYucca3Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
+		<block name="plantedStrawberry1JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="UnlockedBy" value="plantedStrawberry1JTSchematic"/>
+			<property name="CustomIcon" value="plantedStrawberry1JT"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Texture" value="393"/>
+			<property name="PlantGrowing.Next" value="plantedStrawberry2JT"/>
+			<property name="Group" value="Food/Cooking"/>
+			<drop event="Destroy" name="plantedStrawberry1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedStrawberry2JT">
+			<property name="Extends" value="cropsGrowingMaster"/>
+			<property name="CreativeMode" value="None"/>
+			<property name="CustomIcon" value="plantedStrawberry1"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedStrawberry2"/>
+			<property name="PlantGrowing.Next" value="plantedStrawberry3HarvestPlayerJT"/>
+			<drop event="Destroy" name="plantedStrawberry1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedStrawberry3HarvestJT">
+			<property name="Extends" value="cropsHarvestableMaster"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="#@modfolder:Resources/JaxTeller718_Crops.unity3d?plantedStrawberry3"/>
+			<drop event="Harvest" name="foodCropStrawberryJT" count="1" tag="wildCropsHarvest"/>
+			<drop event="Harvest" name="foodCropStrawberryJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedStrawberry3HarvestPlayerJT">
+			<property name="Extends" value="plantedStrawberry3HarvestJT"/>
+			<property name="CustomIcon" value="plantedStrawberry1"/>
+			<property name="CreativeMode" value="None"/>
+			<drop event="Harvest" name="foodCropStrawberryJT" count="1" tag="cropHarvest"/>
+			<drop event="Harvest" name="foodCropStrawberryJT" prob="0.5" count="1" tag="bonusCropHarvest"/>
+			<drop event="Destroy" name="plantedStrawberry1JT" count="1"/>
+			<property name="SellableToTrader" value="false"/>
+		</block>
+		<block name="plantedStrawberry3HarvestRandomHelperJT">
+			<property name="Extends" value="plantedStrawberry3HarvestJT" param1="MultiBlockDim"/>
+			<property name="CreativeMode" value="Dev"/>
+			<property name="CustomIcon" value="plantedYucca3Harvest"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="DescriptionKey" value="plantedCropsRandomHelperGroupDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="FilterTags" value="foutdoor,fcrops,fdesign"/>
+		</block>
+
+	</append>
+
+</JaxTeller718>

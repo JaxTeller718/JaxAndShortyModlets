@@ -51,7 +51,6 @@
 	<set xpath="/blocks/block[@name='palletWhiteBagsBase']/drop[@event='Harvest' and @name='resourceCement']/@name">resourceCement</set>
 	<set xpath="/blocks/block[@name='palletBrownBoxesBase']/drop[@event='Harvest' and @name='resourcePaper']/@count">1,3</set>
 	<set xpath="/blocks/block[@name='palletBrownBoxesBase']/drop[@event='Harvest' and @name='resourceScrapPolymers']/@count">2,4</set>
-	<set xpath="/blocks/block[@name='palletBricksBase']/drop[@event='Harvest' and @name='resourceRockSmall']/@count">3,10</set>
 	<set xpath="/blocks/block[@name='palletBlueTarpBase']/drop[@event='Harvest' and @name='resourceCobblestones']/@count">1,3</set>
 	<set xpath="/blocks/block[@name='palletBlueTarpBase']/drop[@event='Harvest' and @name='resourceCobblestones']/@name">resourceCobblestones</set>
 	<set xpath="/blocks/block[@name='palletCompressedCardboard']/drop[@event='Harvest' and @name='resourcePaper']/@count">1,8</set>

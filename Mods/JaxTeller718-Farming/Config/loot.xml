@@ -1,0 +1,43 @@
+<JaxTeller718>
+
+	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT1']">
+		<item name="plantedLettuce1JTSchematic"/>
+		<item name="plantedCucumber1JTSchematic"/>
+		<item name="plantedCabbage1JTSchematic"/>
+		<item name="plantedWheat1JTSchematic"/>
+		<item name="plantedCarrot1JTSchematic"/>
+		<item name="plantedTomato1JTSchematic"/>
+		<item name="plantedOnion1JTSchematic"/>
+		<item name="foodSaladJTSchematic"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT2']">
+		<item name="foodShortyStewJTSchematic"/>
+		<item name="foodStrawberryPieJTSchematic"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupIngredientsUncommon']">
+		<item name="foodCropTomatoJT"/>
+		<item name="foodCropLettuceJT"/>
+		<item name="foodCropCucumberJT"/>
+		<item name="foodCropCabbageJT"/>
+		<item name="foodCropCarrotJT"/>
+		<item name="foodCropWheatJT"/>
+		<item name="foodCropOnionJT"/>
+		<item name="foodCropStrawberryJT"/>
+	</append>
+	<append xpath="/lootcontainers/lootgroup[@name='groupFoodTrash']">
+	<item name="resourceSeedPackJT" loot_prob_template="medLow"/>
+	</append>
+
+	<append xpath="/lootcontainers/lootgroup[@name='seeds']">
+		<item name="plantedLettuce1JT"/>
+		<item name="plantedCucumber1JT"/>
+		<item name="plantedCabbage1JT"/>
+		<item name="plantedWheat1JT"/>
+		<item name="plantedCarrot1JT"/>
+		<item name="plantedTomato1JT"/>
+		<item name="plantedOnion1JT"/>
+		<item name="resourceSeedPackJT"/>
+	</append>
+
+
+</JaxTeller718>
