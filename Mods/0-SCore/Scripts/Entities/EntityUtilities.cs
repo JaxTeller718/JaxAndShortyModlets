@@ -674,6 +674,11 @@ public static class EntityUtilities
                 // Add the stack of currency to the NPC, and set its orders.
                 //myEntity.bag.AddItem(stack);
                 SetLeaderAndOwner(EntityID, _player.entityId);
+
+                // If we're going to hire them, they need to wake up.
+                if (myEntity.IsSleeping)
+                    myEntity.ConditionalTriggerSleeperWakeUp();
+                
                 return true;
             }
 
@@ -694,7 +699,6 @@ public static class EntityUtilities
             if (currentEntity.Buffs.HasCustomVar("Leader"))
             {
                 leader = GameManager.Instance.World.GetEntity((int)currentEntity.Buffs.GetCustomVar("Leader"));
-
                 // Something happened to our leader.
                 if (leader == null)
                 {
@@ -809,7 +813,7 @@ public static class EntityUtilities
 
     public static void Despawn(int leaderID)
     {
-        var leader = GameManager.Instance.World.GetEntity(leaderID) as EntityPlayer;
+        var leader = GameManager.Instance.World.GetEntity(leaderID) as EntityAlive;
         if (leader == null) return;
 
         var removeList = new List<string>();
@@ -817,7 +821,7 @@ public static class EntityUtilities
         {
             if (cvar.Key.StartsWith("hired_"))
             {
-                var entity = GameManager.Instance.World.GetEntity((int)cvar.Value) as EntityAliveSDX;
+                var entity = GameManager.Instance.World.GetEntity((int)cvar.Value) as EntityAlive;
                 if (entity)
                 {
                     if (entity.IsDead()) // Are they dead? Don't teleport their dead bodies
@@ -826,7 +830,6 @@ public static class EntityUtilities
                         continue;
                     }
 
-                    Debug.Log($"Despawning Hired Entity {entity.EntityName}");
                     entity.ForceDespawn();
                 }
                 else // Clean up the invalid entries
@@ -888,7 +891,15 @@ public static class EntityUtilities
         var leader = GetLeader(EntityID);
         if (leader == null)
             leader = GetOwner(EntityID);
-     
+
+        // If we acquired a leader again, cache it.
+        if (leader != null)
+        {
+            if ( SphereCache.LeaderCache.ContainsKey((int)EntityID))
+                SphereCache.LeaderCache[EntityID] = leader;
+            else
+                SphereCache.LeaderCache.Add((int)EntityID, leader); 
+        }
         return leader;
     }
 

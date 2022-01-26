@@ -218,6 +218,14 @@ namespace UAI
             if (targetEntity.IsDead())
                 return false;
 
+            // If the entity isn't very close to us, make sure they are in our viewcone.
+            var distance = sourceEntity.GetDistanceSq(targetEntity);
+            if ( distance > 100)
+            {
+                if (!sourceEntity.IsInViewCone(targetEntity.position))
+                    return false;
+            }
+
             // Check to see if its in our "See" cache
             if (sourceEntity.CanSee(targetEntity))
                 return true;
@@ -259,6 +267,10 @@ namespace UAI
                     if (leader != null && leader.IsCrouching && component.IsSleeping)
                         return false;
 
+                    if (sourceEntity.GetDistanceSq(targetEntity) > 10)
+                    {
+                        if (!sourceEntity.IsInViewCone(targetEntity.position)) return false;
+                    }
                     /// Add the entity to our CanSee Cache, which expires.
                     sourceEntity.SetCanSee(targetEntity);
                     return true;
@@ -270,9 +282,10 @@ namespace UAI
 
         public static bool IsEnemyNearby(Context _context, float distance = 20f)
         {
-            var revengeTarget = EntityUtilities.GetAttackOrRevengeTarget(_context.Self.entityId);
-            if ( revengeTarget)
-                if (EntityTargetingUtilities.IsEnemy(_context.Self, revengeTarget)) return true;
+            // Do we have a revenge target at any distance? If so, stay paranoid.
+            var revengeTarget = _context.Self.GetRevengeTarget();
+            if (revengeTarget && !EntityTargetingUtilities.ShouldForgiveDamage(_context.Self, revengeTarget))
+                return true;
 
             var nearbyEntities = new List<Entity>();
 
@@ -286,15 +299,12 @@ namespace UAI
                 if (x == null) continue;
                 if (x == _context.Self) continue;
                 if (x.IsDead()) continue;
-         
+
                 // Check to see if they are our enemy first, before deciding if we should see them.
                 if (!EntityTargetingUtilities.IsEnemy(_context.Self, x)) continue;
 
-                //// Can we see them?
-                if (!SCoreUtils.CanSee(_context.Self, x, distance))
-                    continue;
-
-
+                // Can we see them?
+                if (!SCoreUtils.CanSee(_context.Self, x, distance)) continue;
 
                 // Otherwise they are an enemy.
                 return true;
