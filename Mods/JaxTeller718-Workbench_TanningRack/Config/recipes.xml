@@ -1,5 +1,6 @@
 <JaxTeller718>
 	<setattribute xpath="/recipes/recipe[@name='resourceCloth']" name="craft_area">tanningRackJT</setattribute>
+	<setattribute xpath="/recipes/recipe[@name='resourceLeather']" name="craft_area">tanningRackJT</setattribute>
 
 
 	<append xpath="/recipes">
@@ -11,5 +12,6 @@
 			<ingredient name="resourceAnimalHideJT" count="1"/>
 			<ingredient name="resourceStickJT" count="5"/>
 		</recipe>
+		
 	</append>
 </JaxTeller718>

@@ -107,9 +107,9 @@
 			<ingredient name="foodBread" count="1"/>
 			<ingredient name="foodEgg" count="1"/>
 		</recipe>
-		<recipe name="foodFriedEgg" count="1" craft_time="20" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
+		<recipe name="foodFriedEgg" count="3" craft_time="20" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
 			<ingredient name="foodButterJT" count="1"/>
-			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="foodEgg" count="2"/>
 		</recipe>
 
 		<recipe name="foodCustardPie" count="1" craft_time="35" craft_area="campfire" tags="learnable,perkMasterChef" craft_tool="toolCookingPot">
@@ -242,7 +242,7 @@
 			<ingredient name="foodSaltJT" count="1"/>
 			<ingredient name="foodVinegar" count="1"/>
 		</recipe>
-		<recipe name="foodFriedBacon" count="5" craft_area="campfire" craft_tool="toolCookingGrill">
+		<recipe name="foodFriedBacon" count="2" craft_area="campfire" craft_tool="toolCookingGrill">
 			<ingredient name="foodRawMeat" count="5"/>
 		</recipe>
 		<recipe name="resourceDough" count="3" craft_time="15" craft_area="campfire" tags="learnable">
@@ -302,7 +302,7 @@
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 		</recipe>
 		
-		<recipe name="foodButterJT" count="1" craft_time="3" craft_area="campfire" craft_tool="toolCookingPot">
+		<recipe name="foodButterJT" count="2" craft_time="3" craft_area="campfire" craft_tool="toolCookingPot">
 			<ingredient name="resourceAnimalFat" count="5"/>
 		</recipe>
 		

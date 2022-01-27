@@ -1,0 +1,38 @@
+<HarrySuppyDrop>
+
+
+<!-- STOCK AIRDROP STUFF --> 
+<!--
+	<item group="cannedfood" count="3,5" prob="0.2"/>
+	<item group="groupWeaponsScaled" prob="0.2"/>
+	<item group="groupAmmoRegular" count="2" prob="0.2"/>
+	<item group="rareBooks" prob="0.2"/>
+	<item group="airdropMedicine" count="1,4" prob="0.2"/>
+	<item group="groupArmorScaled" prob="0.2"/>
+-->
+
+
+
+	<!-- supply crate -->
+	<append xpath="/lootcontainers/lootcontainer[@id='34']">
+	<item group="groupToolsTiered" prob=".3"/>
+	<item group="bicycleParts" prob=".15"/>
+
+	<item name="casinoCoin" count="0,98"/>
+
+	<item group="groupApparelPants" prob=".25"/>
+	<item group="groupApparelShirtLong" prob=".25"/>
+	<item group="groupApparelTankTopTShirt" prob=".25"/>
+	<item group="groupApparelCoats" prob=".05"/>
+	<item group="groupApparelHats" prob=".1"/>
+	<item group="groupApparelBootsShoes" prob=".15"/>
+
+	<item group="groupArmorT0" prob=".05"/>
+
+	<item group="groupAmmoRegularGunslingerT1" prob=".15"/>
+	<item group="groupAmmoRegular" prob=".1"/>
+	</append>
+
+ <set xpath="/lootcontainers/lootcontainer[@id='34']/@count">10</set>
+
+</HarrySuppyDrop>

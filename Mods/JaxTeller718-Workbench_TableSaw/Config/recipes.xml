@@ -1,6 +1,6 @@
 <JaxTeller718>
 	<append xpath="/recipes">
-		<recipe name="tableSawJT" count="1" craft_time="190" craft_area="workbench" tags="learnable,workbenchCrafting">
+		<recipe name="tableSawJT" count="1" craft_time="190" tags="learnable">
 			<ingredient name="resourceForgedIron" count="25"/>
 			<ingredient name="resourceMechanicalParts" count="20"/>
 			<ingredient name="resourceElectricParts" count="10"/>
