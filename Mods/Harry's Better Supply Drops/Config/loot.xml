@@ -33,6 +33,6 @@
 	<item group="groupAmmoRegular" prob=".1"/>
 	</append>
 
- <set xpath="/lootcontainers/lootcontainer[@id='34']/@count">10</set>
+ <set xpath="/lootcontainers/lootcontainer[@id='34']/@count">5,7</set>
 
 </HarrySuppyDrop>
