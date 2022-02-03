@@ -12,6 +12,10 @@
 	</insertAfter> -->
 	
 	<append xpath="/recipes">
+		<recipe name="foodVinegar" count="2" craft_time="180" craft_area="campfire" craft_tool="toolBeaker" tags="learnable">
+			<ingredient name="drinkJarBeer" count="1"/>
+			<ingredient name="drinkJarEmpty" count="1"/>
+		</recipe>
 		<recipe name="foodBaconAndEggs" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="perkMasterChef,learnable">
 			<ingredient name="foodFriedBacon" count="1"/>
 			<ingredient name="foodFriedEgg" count="1"/>
@@ -256,7 +260,7 @@
 			<ingredient name="drinkJarBoiledWater" count="1"/>
 		</recipe>
 
-		<recipe name="foodCheese" count="1" craft_time="60" craft_area="campfire">
+		<recipe name="foodCheese" count="3" craft_time="60" craft_area="campfire">
 			<ingredient name="drinkMilk" count="3"/>
 			<ingredient name="foodSaltJT" count="5"/>
 		</recipe>
